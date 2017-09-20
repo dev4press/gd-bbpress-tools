@@ -36,7 +36,7 @@ class gdbbT_Admin {
                 echo __("Thank you for using this plugin. Please, take a few minutes and check out the GD bbPress Toolbox Pro plugin with many new and improved features.", "gd-bbpress-tools");
                 echo '<br/>'.__("Buy GD bbPress Toolbox Pro version or Dev4Press Plugins Pack and get 15% discount using this coupon", "gd-bbpress-tools");
                 echo ': <strong style="color: #c00;">GDBBPTOPRO</strong><br/>';
-                echo '<strong><a href="https://bbpress.dev4press.com/" target="_blank">'.__("Official Website", "gd-bbpress-tools")."</a></strong> &middot; ";
+                echo '<strong><a href="https://plugins.dev4press.com/gd-bbpress-toolbox/" target="_blank">'.__("Official Website", "gd-bbpress-tools")."</a></strong> &middot; ";
                 echo '<strong><a href="https://pack.dev4press.com/" target="_blank">'.__("Dev4Press Plugins Pack", "gd-bbpress-tools")."</a></strong> &middot; ";
                 echo '<a href="'.$no_thanks.'">'.__("Hide this message", "gd-bbpress-tools")."</a>.";
             echo '</div>';
@@ -103,7 +103,7 @@ class gdbbT_Admin {
     function plugin_links($links, $file) {
         if ($file == 'gd-bbpress-tools/gd-bbpress-tools.php'){
             $links[] = '<a href="edit.php?post_type=forum&page=gdbbpress_tools&tab=faq">'.__("FAQ", "gd-bbpress-tools").'</a>';
-            $links[] = '<a target="_blank" style="color: #cc0000; font-weight: bold;" href="https://bbpress.dev4press.com/">'.__("Upgrade to GD bbPress Toolbox Pro", "gd-bbpress-tools").'</a>';
+            $links[] = '<a target="_blank" style="color: #cc0000; font-weight: bold;" href="https://plugins.dev4press.com/gd-bbpress-toolbox/">'.__("Upgrade to GD bbPress Toolbox Pro", "gd-bbpress-tools").'</a>';
         }
 
         return $links;

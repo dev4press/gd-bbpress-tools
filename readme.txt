@@ -1,6 +1,6 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
-Donate link: https://bbpress.dev4press.com/
+Donate link: https://plugins.dev4press.com/gd-bbpress-toolbox/
 Version: 1.9
 Tags: bbpress, tools, gdragon, dev4press, forums, forum, topic, reply, signature, quote, search, toolbar, signature, views, admin, bbcode, bbcodes, shortcode, shortcodes
 Requires at least: 4.0
@@ -35,10 +35,10 @@ GD bbPress Tools 1.9 is tested with BuddyPress 2.6.x. Make sure you enable JavaS
 
 = Upgrade to GD bbPress Toolbox Pro =
 Pro version contains many more useful features 10 more BBCodes (including Hide and Spoiler), BBCodes editor toolbar, report topics and replies, SEO features, many more views, notification email control, BBCodes toolbar, great new responsive admin UI, enhanced attachments features and additional widgets.
-[GD bbPress Toolbox Pro](https://bbpress.dev4press.com/)
+[GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/)
 
 = Premium dev4Press.com plugins for bbPress =
-* [GD bbPress Toolbox Pro](https://bbpress.dev4press.com/) - ultimate collection of tools for bbPress
+* [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) - ultimate collection of tools for bbPress
 * [GD Content Tools Pro](https://content.dev4press.com/) - meta box for the topic and reply form
 
 = More free dev4Press.com plugins for bbPress =
