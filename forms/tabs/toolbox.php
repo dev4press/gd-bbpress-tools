@@ -6,8 +6,8 @@
 
     <h3><?php _e("Important links", "gd-bbpress-tools"); ?></h3>
     <a href="https://plugins.dev4press.com/gd-bbpress-toolbox/" target="_blank"><?php _e("Official Website", "gd-bbpress-tools"); ?></a><br/>
-    <a href="https://plugins.dev4press.com/gd-bbpress-toolbox/toolbox-pro-vs-free-plugins/" target="_blank"><?php _e("Toolbox Pro vs Free plugins", "gd-bbpress-tools"); ?></a><br/>
-    <a href="https://pack.dev4press.com/" target="_blank"><?php _e("Dev4Press Plugins Pack", "gd-bbpress-tools"); ?></a><br/>
+    <a href="https://plugins.dev4press.com/gd-bbpress-toolbox/articles/toolbox-pro-vs-free-plugins/" target="_blank"><?php _e("Toolbox Pro vs Free plugins", "gd-bbpress-tools"); ?></a><br/>
+    <a href="https://club.dev4press.com/" target="_blank"><?php _e("Dev4Press PLugins Club Membership", "gd-bbpress-tools"); ?></a><br/>
 </div>
 <div class="d4p-information-second" style="padding-top: 15px;">
     <h2 style="padding-top: 0; font-weight: bold;"><a title="GD bbPress Toolbox" target="_blank" href="https://plugins.dev4press.com/gd-bbpress-toolbox/">GD bbPress Toolbox Pro</a></h2>
