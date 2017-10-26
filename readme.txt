@@ -86,6 +86,7 @@ Various minor improvements and updates.
 == Changelog ==
 = 1.9.2 - 2017.10.26 =
 * Added function to access BBCodes handler functions
+* Updated trim quote content before adding to editor
 * Updated several BBCodes handler functions
 * Fixed topic related issue with the quote BBCode
 * Fixed minor issue with the loading of Views module

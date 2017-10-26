@@ -490,7 +490,7 @@ class gdbbMod_Shortcodes {
             $id = absint($atts['quote']);
 
             if (bbp_is_topic($id)) {
-                $url = bbp_permalink($id);
+                $url = get_permalink($id);
                 $ath = bbp_get_topic_author_display_name($id);
             } else if (bbp_is_reply($id)) {
                 $url = bbp_get_reply_url($id);
