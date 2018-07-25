@@ -15,15 +15,18 @@ Adds different expansions and tools to the bbPress plugin powered forums: BBCode
 == Description ==
 Adds various expansions and tools to the bbPress plugin implemented forums. Currently included features:
 
-* BBCode shortcodes support
 * Quote Reply or Topic
 * User signature with BBCode and HTML support
-* Additional custom views
-* Basic topics search results view
+* Signature field in BuddyPress profile edit
 * Toolbar menu integration
+* BBCode shortcodes with 30 BBCodes
 * Limit bbPress admin side access
-
-The plugin supports BBCodes based on the phpBB implementation. Right now, the plugin has 30 BBCodes.
+* Tweak: Disable bbPress breadcrumbs
+* Tweak: Topic tags field in reply form for author only
+* Tweak: Show lead topic
+* Topics View: Topics with most replies
+* Topics View: Latest Topics
+* Topics View: Topics by freshness
 
 = bbPress Plugin Versions =
 GD bbPress Tools 2.0 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
@@ -36,7 +39,34 @@ GD bbPress Tools 2.0 is tested with BuddyPress 3.0 using bbPress for Groups foru
 * [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
 
 = Upgrade to GD bbPress Toolbox Pro =
-Pro version contains many more useful features 10 more BBCodes (including Hide and Spoiler), BBCodes editor toolbar, report topics and replies, SEO features, many more views, notification email control, BBCodes toolbar, great new responsive admin UI, enhanced attachments features and additional widgets. For more information: [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/)
+Pro version contains many more great features:
+
+* Enhanced attachments features
+* BBCodes editor toolbar
+* Report topics and replies
+* Say thanks to forum members
+* Various SEO features
+* Various privacy features
+* Enable TinyMCE editor
+* Private topics and replies
+* Auto closing of inactive topics
+* Notification email control
+* Show user stats in topics and replies
+* Track new and unread topics
+* Great new responsive admin UI
+* Setup Wizard
+* Forum based settings overrides
+* Improved BuddyPress support
+* 40 BBCodes (including Hide and Spoiler)
+* 19 Topics Views
+* 8 additional widgets
+* Many great tweaks
+* And much, much more
+
+With more features on the roadmap exclusively for Pro version.
+
+* More information about [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/)
+* Compare [Free vs. Pro Plugin](https://plugins.dev4press.com/gd-bbpress-toolbox/articles/toolbox-pro-vs-free-plugins/)
 
 = Premium dev4Press.com plugins for bbPress =
 * [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) - collection of features for bbPress
@@ -79,7 +109,7 @@ No. This plugin requires the plugin versions of bbPress 2.5 or higher.
 New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements
 
 == Changelog ==
-= 2.0 - 2018.07.26 =
+= 2.0 - 2018.07.25 =
 * New interface for the plugin settings panel
 * New panel with settings for Tweaks
 * New tweak: show lead topic

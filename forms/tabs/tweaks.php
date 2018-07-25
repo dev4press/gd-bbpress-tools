@@ -53,7 +53,7 @@
         </fieldset>
 
         <p class="submit">
-            <input type="submit" value="<?php _e("Save Changes", "gd-bbpress-tools"); ?>" class="button-primary gdbb-tools-submit" id="gdbb-tweaks-submit" name="gdbb-views-submit" />
+            <input type="submit" value="<?php _e("Save Changes", "gd-bbpress-tools"); ?>" class="button-primary gdbb-tools-submit" id="gdbb-tweaks-submit" name="gdbb-tweaks-submit" />
         </p>
     </div>
     <div class="d4p-settings-second">
