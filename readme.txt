@@ -279,8 +279,9 @@ New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshn
 * First official release
 
 == Screenshots ==
-1. Main plugins settings panel
-2. BBCode settings panel
-3. Views settings panel
-4. Toolbar bbPress forums menu
-5. Setting up signature
+1. Main settings panel
+2. Tweaks panel
+3. BBCodes panel
+4. Topics Views panel
+5. Toolbar bbPress forums menu
+6. Setting up signature
