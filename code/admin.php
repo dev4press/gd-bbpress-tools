@@ -29,17 +29,6 @@ class gdbbT_Admin {
             echo '<br/><strong><a href="edit.php?post_type=forum&page=gdbbpress_tools&tab=update">'.__("Update Information", "gd-bbpress-tools")."</a></strong> &middot; ";
             echo '<a href="'.$no_thanks.'">'.__("Don't display this message anymore", "gd-bbpress-tools")."</a>.";
             echo '</div>';
-        } else if ($gdbbpress_tools->o['upgrade_to_pro_190'] == 1) {
-            $no_thanks = add_query_arg('proupgradebbt', 'hide');
-
-            echo '<div class="updated d4p-updated">';
-                echo __("Thank you for using this plugin. Please, take a few minutes and check out the GD bbPress Toolbox Pro plugin with many new and improved features.", "gd-bbpress-tools");
-                echo '<br/>'.__("Buy GD bbPress Toolbox Pro version or Dev4Press Plugins Pack and get 15% discount using this coupon", "gd-bbpress-tools");
-                echo ': <strong style="color: #c00;">GDBBPTOPRO</strong><br/>';
-                echo '<strong><a href="https://plugins.dev4press.com/gd-bbpress-toolbox/" target="_blank">'.__("Official Website", "gd-bbpress-tools")."</a></strong> &middot; ";
-                echo '<strong><a href="https://club.dev4press.com/" target="_blank">'.__("Dev4Press Club Membership", "gd-bbpress-tools")."</a></strong> &middot; ";
-                echo '<a href="'.$no_thanks.'">'.__("Hide this message", "gd-bbpress-tools")."</a>.";
-            echo '</div>';
         }
     }
 
@@ -58,22 +47,11 @@ class gdbbT_Admin {
             wp_redirect(remove_query_arg('wp44updnotice'));
             exit;
         }
-
-        if (isset($_GET['proupgradebbt']) && $_GET['proupgradebbt'] == 'hide') {
-            global $gdbbpress_tools;
-
-            $gdbbpress_tools->o['upgrade_to_pro_190'] = 0;
-
-            update_option('gd-bbpress-tools', $gdbbpress_tools->o);
-
-            wp_redirect(remove_query_arg('proupgradebbt'));
-            exit;
-        }
     }
 
     public function enqueue_files() {
         if ($this->admin_plugin) {
-            wp_enqueue_style('gd-bbpress-tools', GDBBPRESSTOOLS_URL."css/gd-bbpress-tools_admin.css", array(), GDBBPRESSTOOLS_VERSION);
+            wp_enqueue_style('gd-bbpress-tools', GDBBPRESSTOOLS_URL."css/admin.css", array(), GDBBPRESSTOOLS_VERSION);
         }
     }
     

@@ -1,10 +1,10 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-toolbox/
-Version: 1.9.3
-Tags: bbpress, tools, gdragon, dev4press, forums, forum, topic, reply, signature, quote, search, toolbar, signature, views, admin, bbcode, bbcodes, shortcode, shortcodes
-Requires at least: 4.2
-Requires PHP: 5.3
+Version: 2.0
+Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
+Requires at least: 4.4
+Requires PHP: 5.5
 Tested up to: 4.9
 Stable tag: trunk
 License: GPLv2 or later
@@ -25,13 +25,15 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 
 The plugin supports BBCodes based on the phpBB implementation. Right now, the plugin has 30 BBCodes.
 
-Included translations: English, Serbian, German.
-
 = bbPress Plugin Versions =
-GD bbPress Tools 1.9.2 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
+GD bbPress Tools 2.0 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
 
 = BuddyPress Support =
-GD bbPress Tools 1.9.2 is tested with BuddyPress 2.6 and newer and it works fine if you enable BuddyPress support in bbPress plugin for Group Forums. Make sure you enable JavaScript and CSS Settings Always Include option in the Attachments plugin settings.
+GD bbPress Tools 2.0 is tested with BuddyPress 3.0 using bbPress for Groups forums. Make sure you enable JavaScript and CSS Settings Always Include option in the plugin settings.
+
+= More free dev4Press.com plugins for bbPress =
+* [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
+* [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
 
 = Upgrade to GD bbPress Toolbox Pro =
 Pro version contains many more useful features 10 more BBCodes (including Hide and Spoiler), BBCodes editor toolbar, report topics and replies, SEO features, many more views, notification email control, BBCodes toolbar, great new responsive admin UI, enhanced attachments features and additional widgets. For more information: [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/)
@@ -42,16 +44,12 @@ Pro version contains many more useful features 10 more BBCodes (including Hide a
 * [GD Topic Prefix Pro](https://plugins.dev4press.com/gd-topic-prefix/) - add customizable bbPress topic prefixes
 * [GD Content Tools Pro](https://plugins.dev4press.com/gd-content-tools/) - meta box for the topic and reply form
 
-= More free dev4Press.com plugins for bbPress =
-* [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
-* [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
-
 == Installation ==
 = General Requirements =
-* PHP: 5.3 or newer
+* PHP: 5.5 or newer
 
 = WordPress Requirements =
-* WordPress: 4.2 or newer
+* WordPress: 4.4 or newer
 
 = bbPress Requirements =
 * bbPress Plugin: 2.5 or newer
@@ -62,17 +60,14 @@ Pro version contains many more useful features 10 more BBCodes (including Hide a
 * Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
-* Where can I configure the plugin?
+= Where can I configure the plugin? =
 Open the Forums menu, and you will see Tools item there. This will open a panel with global plugin settings.
 
-* Will this plugin work with standalone bbPress installation?
-No. This plugin requires the plugin versions of bbPress 2.3 or higher.
+= When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
+This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
-* Does this plugin work with bbPress that is part of BuddyPress plugin?
-No. Plugin requires bbPress 2.3 or higher plugin.
-
-* Does this plugin work with bbPress plugin used as site wide forums for BuddyPress plugin?
-Yes. But, make sure to enable 'Always Include' option for JavaScript and CSS.
+= Will this plugin work with standalone bbPress installation? =
+No. This plugin requires the plugin versions of bbPress 2.5 or higher.
 
 == Translations ==
 * English
@@ -80,10 +75,21 @@ Yes. But, make sure to enable 'Always Include' option for JavaScript and CSS.
 * German: David Decker - https://deckerweb.de/
 
 == Upgrade Notice ==
-= 1.9.3 =
-Updated function for universal rendering of BBCodes.
+= 2.0 =
+New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements
 
 == Changelog ==
+= 2.0 - 2018.07.26 =
+* New interface for the plugin settings panel
+* New panel with settings for Tweaks
+* New tweak: show lead topic
+* New tweak: disable breadcrumbs
+* New tweak: topic tags in reply for topic author only
+* New topics view: Topics Freshness
+* Updated toolbar icon to use bbPress dashicon
+* Updated WordPress minimal requirement to 4.4
+* Updated PHP minimal requirement to 5.5
+
 = 1.9.3 - 2018.02.16 =
 * Updated function for universal rendering of BBCodes
 * Updated various URL's included in plugin and readme file
