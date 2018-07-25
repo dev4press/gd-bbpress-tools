@@ -246,10 +246,11 @@ if (isset($_GET["settings-updated"]) && $_GET["settings-updated"] == "true") { ?
         </fieldset>
 
         <p class="submit">
-            <input type="submit" value="<?php _e("Save Changes", "gd-bbpress-tools"); ?>" class="button-primary" id="gdbb-bbcode-submit" name="gdbb-bbcode-submit" />
+            <input type="submit" value="<?php _e("Save Changes", "gd-bbpress-tools"); ?>" class="button-primary gdbb-tools-submit" id="gdbb-bbcode-submit" name="gdbb-bbcode-submit" />
         </p>
     </div>
     <div class="d4p-settings-second">
+        <?php include(GDBBPRESSTOOLS_PATH.'forms/more/toolbox.php'); ?>
     </div>
 
     <div class="d4p-clear"></div>

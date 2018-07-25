@@ -11,12 +11,12 @@
 
 .d4p-settings, .d4p-information {
     padding: 0 30px 15px 0;
-    width: 640px;
+    width: 600px;
     float: left;
 }
 
 .d4p-settings-second, .d4p-information-second {
-    width: 200px;
+    width: 250px;
     float: left;
 }
 
@@ -28,11 +28,42 @@
     margin: 15px 0 0;
 }
 
+.d4p-bbpress-toolbox > fieldset {
+    background-color: #d9faff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+.d4p-bbpress-toolbox > fieldset.the-top {
+    background-color: #224760;
+    color: #fff;
+}
+
+.d4p-bbpress-toolbox > fieldset.the-top a {
+    color: #fff;
+}
+
+.d4p-bbpress-toolbox > fieldset.the-top h3 {
+    margin: 5px 0; 
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+.d4p-bbpress-toolbox > fieldset.the-top h4 {
+    margin: 5px 0;
+    padding: 5px 0 0;
+    border-top: 1px solid #eee;
+}
+
+.d4p-bbpress-toolbox > fieldset > *:first-child,
 .d4p-information > fieldset > *:first-child,
 .d4p-settings > fieldset > *:first-child {
     margin-top: 0;
 }
 
+.d4p-bbpress-toolbox > fieldset > *:last-child,
 .d4p-information > fieldset > *:last-child,
 .d4p-settings > fieldset > *:last-child {
     margin-bottom: 0;
@@ -85,7 +116,7 @@ div.d4p-updated {
     width: 20px !important;
 }
 
-#gdbb-tools-submit {
+.button-primary.gdbb-tools-submit {
     font-size: larger;
     padding: 5px 40px;
     height: 40px;

@@ -43,7 +43,7 @@
             <table class="form-table">
                 <tbody>
                     <tr valign="top">
-                        <th scope="row"><label for="view_latesttopics_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
+                        <th scope="row"><label for="view_topicsfreshness_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["view_topicsfreshness_active"] == 1) echo " checked"; ?> name="view_topicsfreshness_active" />
                         </td>
@@ -53,10 +53,11 @@
         </fieldset>
 
         <p class="submit">
-            <input type="submit" value="<?php _e("Save Changes", "gd-bbpress-tools"); ?>" class="button-primary" id="gdbb-views-submit" name="gdbb-views-submit" />
+            <input type="submit" value="<?php _e("Save Changes", "gd-bbpress-tools"); ?>" class="button-primary gdbb-tools-submit" id="gdbb-views-submit" name="gdbb-views-submit" />
         </p>
     </div>
     <div class="d4p-settings-second">
+        <?php include(GDBBPRESSTOOLS_PATH.'forms/more/toolbox.php'); ?>
     </div>
 
     <div class="d4p-clear"></div>

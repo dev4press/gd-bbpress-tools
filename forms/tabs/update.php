@@ -15,5 +15,5 @@
     </fieldset>
 </div>
 <div class="d4p-settings-second">
-    X
+    <?php include(GDBBPRESSTOOLS_PATH.'forms/more/toolbox.php'); ?>
 </div>

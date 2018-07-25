@@ -42,6 +42,7 @@
     </fieldset>
 </div>
 <div class="d4p-information-second">
+    <?php include(GDBBPRESSTOOLS_PATH.'forms/more/toolbox.php'); ?>
 </div>
 <div class="d4p-clear"></div>
 <div class="d4p-copyright">

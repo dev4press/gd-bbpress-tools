@@ -41,8 +41,8 @@
         <a target="_blank" href="https://wordpress.org/plugins/gd-linkedin-badge/">GD LinkedIn Badge</a>
     </fieldset>
 </div>
-
 <div class="d4p-information-second">
+    <?php include(GDBBPRESSTOOLS_PATH.'forms/more/toolbox.php'); ?>
 </div>
 
 <div class="d4p-clear"></div>
