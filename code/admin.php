@@ -80,7 +80,6 @@ class gdbbT_Admin {
 
     function plugin_links($links, $file) {
         if ($file == 'gd-bbpress-tools/gd-bbpress-tools.php'){
-            $links[] = '<a href="edit.php?post_type=forum&page=gdbbpress_tools&tab=faq">'.__("FAQ", "gd-bbpress-tools").'</a>';
             $links[] = '<a target="_blank" style="color: #cc0000; font-weight: bold;" href="https://plugins.dev4press.com/gd-bbpress-toolbox/">'.__("Upgrade to GD bbPress Toolbox Pro", "gd-bbpress-tools").'</a>';
         }
 
