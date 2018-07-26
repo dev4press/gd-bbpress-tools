@@ -42,6 +42,7 @@ GD bbPress Tools 2.0 is tested with BuddyPress 3.0 using bbPress for Groups foru
 Pro version contains many more great features:
 
 * Enhanced attachments features
+* Limit file types attachments uplod
 * BBCodes editor toolbar
 * Report topics and replies
 * Say thanks to forum members
@@ -93,11 +94,11 @@ With more features on the roadmap exclusively for Pro version.
 = Where can I configure the plugin? =
 Open the Forums menu, and you will see Tools item there. This will open a panel with global plugin settings.
 
-= When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
-This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
-
 = Will this plugin work with standalone bbPress installation? =
 No. This plugin requires the plugin versions of bbPress 2.5 or higher.
+
+= When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
+This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
 == Translations ==
 * English
@@ -106,7 +107,7 @@ No. This plugin requires the plugin versions of bbPress 2.5 or higher.
 
 == Upgrade Notice ==
 = 2.0 =
-New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements
+New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements.
 
 == Changelog ==
 = 2.0 - 2018.07.25 =
