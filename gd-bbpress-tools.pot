@@ -287,82 +287,78 @@ msgid "Don't display this message anymore"
 msgstr ""
 
 #: code/admin.php:82
-msgid "FAQ"
-msgstr ""
-
-#: code/admin.php:83
 msgid "Upgrade to GD bbPress Toolbox Pro"
 msgstr ""
 
-#: code/admin.php:94
+#: code/admin.php:93
 msgid "Website"
 msgstr ""
 
-#: code/admin.php:95
+#: code/admin.php:94
 msgid "On Twitter"
 msgstr ""
 
-#: code/admin.php:96
+#: code/admin.php:95
 msgid "On Facebook"
 msgstr ""
 
-#: code/admin.php:100
+#: code/admin.php:99
 msgid "Get Help"
 msgstr ""
 
-#: code/admin.php:101
+#: code/admin.php:100
 msgid "General Plugin Information"
 msgstr ""
 
-#: code/admin.php:102
+#: code/admin.php:101
 msgid "Home Page on Dev4Press.com"
 msgstr ""
 
-#: code/admin.php:103
+#: code/admin.php:102
 msgid "Home Page on WordPress.org"
 msgstr ""
 
-#: code/admin.php:104
+#: code/admin.php:103
 msgid "Getting Plugin Support"
 msgstr ""
 
-#: code/admin.php:105
+#: code/admin.php:104
 msgid "Support Forum on Dev4Press.com"
 msgstr ""
 
-#: code/admin.php:106
+#: code/admin.php:105
 msgid "Support Forum on WordPress.org"
 msgstr ""
 
-#: code/admin.php:107
+#: code/admin.php:106
 msgid "Support Forum on Dev4Press"
 msgstr ""
 
-#: code/admin.php:112
+#: code/admin.php:111
 msgid "On Dev4Press website you can find many useful plugins, themes and tutorials, all for WordPress. Please, take a few minutes to browse some of these resources, you might find some of them very useful."
 msgstr ""
 
-#: code/admin.php:113
+#: code/admin.php:112
 msgid "Plugins"
 msgstr ""
 
-#: code/admin.php:113
+#: code/admin.php:112
 msgid "We have more than 10 plugins available, some of them are commercial and some are available for free."
 msgstr ""
 
-#: code/admin.php:114
+#: code/admin.php:113
 msgid "Knowledge Base"
 msgstr ""
 
-#: code/admin.php:114
+#: code/admin.php:113
 msgid "Premium and free tutorials for our plugins themes, and many general and practical WordPress tutorials."
 msgstr ""
 
-#: code/admin.php:115
+#: code/admin.php:114
 msgid "Support Forums"
 msgstr ""
 
-#: code/admin.php:115
+#: code/admin.php:114
 msgid "Premium support forum for all with valid licenses to get help. Also, report bugs and leave suggestions."
 msgstr ""
 
@@ -467,39 +463,43 @@ msgid "System Requirements"
 msgstr ""
 
 #: forms/tabs/about.php:24
-msgid "WordPress: "
+msgid "PHP: "
 msgstr ""
 
 #: forms/tabs/about.php:26
+msgid "WordPress: "
+msgstr ""
+
+#: forms/tabs/about.php:28
 msgid "bbPress: "
 msgstr ""
 
-#: forms/tabs/about.php:33
+#: forms/tabs/about.php:35
 msgid "Important Plugin Links"
 msgstr ""
 
-#: forms/tabs/about.php:34
+#: forms/tabs/about.php:36
 msgid "Home Page"
 msgstr ""
 
-#: forms/tabs/about.php:35
-#: forms/tabs/about.php:39
+#: forms/tabs/about.php:37
+#: forms/tabs/about.php:41
 msgid "on"
 msgstr ""
 
-#: forms/tabs/about.php:36
+#: forms/tabs/about.php:38
 msgid "Plugin Support"
 msgstr ""
 
-#: forms/tabs/about.php:37
+#: forms/tabs/about.php:39
 msgid "Plugin Support Forum on Dev4Press"
 msgstr ""
 
-#: forms/tabs/about.php:38
+#: forms/tabs/about.php:40
 msgid "Dev4Press Important Links"
 msgstr ""
 
-#: forms/tabs/about.php:40
+#: forms/tabs/about.php:42
 msgid "Page"
 msgstr ""
 

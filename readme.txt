@@ -1,7 +1,7 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-toolbox/
-Version: 2.0
+Version: 2.0.1
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
 Requires at least: 4.4
 Requires PHP: 5.5
@@ -97,6 +97,12 @@ Open the Forums menu, and you will see Tools item there. This will open a panel 
 = Will this plugin work with standalone bbPress installation? =
 No. This plugin requires the plugin versions of bbPress 2.5 or higher.
 
+= Click on Quote button doesn't add quoted content? =
+This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled. If that doesn't help, make sure to enable 'Always Include' option too.
+
+= Some features not working with BuddyPress group forums? =
+This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled and 'Always Include' option is also enabled.
+
 = When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
 This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
@@ -110,6 +116,10 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements.
 
 == Changelog ==
+= 2.0.1 - 2018.07.27 =
+* Updated readme file with new FAQ entries
+* Updated plugin admin code to remove FAQ link
+
 = 2.0 - 2018.07.25 =
 * New interface for the plugin settings panel
 * New panel with settings for Tweaks
