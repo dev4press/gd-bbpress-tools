@@ -9,13 +9,13 @@ class gdbbT_Admin {
     private $admin_plugin = false;
 
     function __construct() {
-        add_action('admin_init', array(&$this, 'admin_init'));
-        add_action('admin_menu', array(&$this, 'admin_menu'));
+        add_action('admin_init', array($this, 'admin_init'));
+        add_action('admin_menu', array($this, 'admin_menu'));
 
-        add_filter('plugin_action_links', array(&$this, 'plugin_actions'), 10, 2);
-        add_filter('plugin_row_meta', array(&$this, 'plugin_links'), 10, 2);
+        add_filter('plugin_action_links', array($this, 'plugin_actions'), 10, 2);
+        add_filter('plugin_row_meta', array($this, 'plugin_links'), 10, 2);
 
-        add_action('admin_enqueue_scripts', array(&$this, 'enqueue_files'));
+        add_action('admin_enqueue_scripts', array($this, 'enqueue_files'));
     }
 
     function upgrade_notice() {
@@ -56,7 +56,7 @@ class gdbbT_Admin {
     }
     
     public function admin_menu() {
-        $this->page_ids[] = add_submenu_page('edit.php?post_type=forum', 'GD bbPress Tools', __("Tools", "gd-bbpress-tools"), GDBBPRESSTOOLS_CAP, 'gdbbpress_tools', array(&$this, 'menu_tools'));
+        $this->page_ids[] = add_submenu_page('edit.php?post_type=forum', 'GD bbPress Tools', __("Tools", "gd-bbpress-tools"), GDBBPRESSTOOLS_CAP, 'gdbbpress_tools', array($this, 'menu_tools'));
 
         $this->admin_load_hooks();
     }
@@ -65,7 +65,7 @@ class gdbbT_Admin {
         if (GDBBPRESSTOOLS_WPV < 33) return;
 
         foreach ($this->page_ids as $id) {
-            add_action('load-'.$id, array(&$this, 'load_admin_page'));
+            add_action('load-'.$id, array($this, 'load_admin_page'));
         }
     }
 

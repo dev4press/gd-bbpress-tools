@@ -1,7 +1,7 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
-Donate link: https://plugins.dev4press.com/gd-bbpress-toolbox/
-Version: 2.0.1
+Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
+Version: 2.0.2
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
 Requires at least: 4.4
 Requires PHP: 5.5
@@ -103,6 +103,9 @@ This happens if the plugin's JavaScript is not loaded. Make sure that both CSS a
 = Some features not working with BuddyPress group forums? =
 This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled and 'Always Include' option is also enabled.
 
+= Some BuddyPress features break when I use Nuovo templates? =
+The problem is caused by the Italic BBCode due to the conflict with the Underscore templates system BuddyPress uses. You can disable Italic BBCode, or you can limit BBCodes to the bbPress content only (highly recommended).
+
 = When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
 This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
@@ -116,6 +119,12 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements.
 
 == Changelog ==
+= 2.0.2 - 2018.08.22 =
+* Changed default BBCode option to load on bbPress pages only to enabled
+* Updated BBCodes information for potential issue with BuddyPress
+* Updated readme.txt file and the include FAQ list
+* Minor core code changes and improvements
+
 = 2.0.1 - 2018.07.27 =
 * Updated readme file with new FAQ entries
 * Updated plugin admin code to remove FAQ link

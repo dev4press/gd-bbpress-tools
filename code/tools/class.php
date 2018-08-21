@@ -143,8 +143,8 @@ class gdbbPressTools {
         }
 
         if ($this->o['allowed_tags_div'] == 1) {
-            add_filter('bbp_kses_allowed_tags', array(&$this, 'allowed_tags'));
-            add_filter('bbp_get_allowed_tags', array(&$this, 'display_allowed_tags'));
+            add_filter('bbp_kses_allowed_tags', array($this, 'allowed_tags'));
+            add_filter('bbp_get_allowed_tags', array($this, 'display_allowed_tags'));
         }
 
         $views = array();

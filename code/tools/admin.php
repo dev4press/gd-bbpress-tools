@@ -6,7 +6,7 @@ class gdbbMod_Admin {
     public $admin_plugin = false;
 
     function __construct() {
-        add_action('admin_init', array(&$this, 'admin_init'));
+        add_action('admin_init', array($this, 'admin_init'));
     }
 
     public function admin_init() {

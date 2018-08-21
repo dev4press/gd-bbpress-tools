@@ -8,8 +8,8 @@ class gdbbMod_Front {
     }
 
     public function load() {
-        add_action('bbp_head', array(&$this, 'bbp_head'));
-        add_action('wp_enqueue_scripts', array(&$this, 'wp_enqueue_scripts'));
+        add_action('bbp_head', array($this, 'bbp_head'));
+        add_action('wp_enqueue_scripts', array($this, 'wp_enqueue_scripts'));
     }
 
     public function wp_enqueue_scripts() {

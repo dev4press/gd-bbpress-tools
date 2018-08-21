@@ -8,10 +8,10 @@ class gdbbMod_Toolbar {
     }
 
     public function init() {
-        add_action('admin_bar_menu', array(&$this, 'admin_bar_menu'), 100);
+        add_action('admin_bar_menu', array($this, 'admin_bar_menu'), 100);
 
-        add_action('admin_head', array(&$this, 'admin_bar_icon'));
-        add_action('wp_head', array(&$this, 'admin_bar_icon'));
+        add_action('admin_head', array($this, 'admin_bar_icon'));
+        add_action('wp_head', array($this, 'admin_bar_icon'));
     }
 
     public function admin_bar_icon() { ?>

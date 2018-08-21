@@ -8,7 +8,7 @@ class gdbbMod_Views {
     function __construct($views) {
         $this->views = $views;
 
-        add_action('bbtoolbox_core', array(&$this, 'register_views'));
+        add_action('bbtoolbox_core', array($this, 'register_views'));
     }
 
     public function register_views() {

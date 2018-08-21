@@ -62,6 +62,7 @@ if (isset($_GET["settings-updated"]) && $_GET["settings-updated"] == "true") { ?
                     </tr>
                 </tbody>
             </table>
+            <p style="font-weight: bold;"><?php _e("If you are using BuddyPress Nuovo templates, BBCode for Italic can cause the problem with some elements of the BuddyPress using underscore templates to render. To avoid that, you need to enable this option, or disable Italic BBCode below.", "gd-bbpress-tools"); ?></p>
         </fieldset>
 
         <fieldset>

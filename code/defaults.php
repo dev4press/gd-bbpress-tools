@@ -4,9 +4,9 @@ if (!defined('ABSPATH')) exit;
 
 class gdbbPressTools_Defaults {
     var $default_options = array(
-        'version' => '2.0.1',
-        'date' => '2018.07.27.',
-        'build' => 2201,
+        'version' => '2.0.2',
+        'date' => '2018.08.22.',
+        'build' => 2202,
         'status' => 'stable',
         'update_wp44' => 0,
         'product_id' => 'gd-bbpress-tools',
@@ -32,7 +32,7 @@ class gdbbPressTools_Defaults {
         'quote_roles' => null,
         'bbcodes_active' => 1,
         'bbcodes_notice' => 1,
-        'bbcodes_bbpress_only' => 0,
+        'bbcodes_bbpress_only' => 1,
         'bbcodes_special_super_admin' => 1,
         'bbcodes_special_roles' => null,
         'bbcodes_special_action' => 'info',
