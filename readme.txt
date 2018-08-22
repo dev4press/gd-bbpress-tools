@@ -103,7 +103,7 @@ This happens if the plugin's JavaScript is not loaded. Make sure that both CSS a
 = Some features not working with BuddyPress group forums? =
 This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled and 'Always Include' option is also enabled.
 
-= Some BuddyPress features break when I use Nuovo templates? =
+= Some BuddyPress features break when I use BuddyPress Nuovo templates? =
 The problem is caused by the Italic BBCode due to the conflict with the Underscore templates system BuddyPress uses. You can disable Italic BBCode, or you can limit BBCodes to the bbPress content only (highly recommended).
 
 = When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
