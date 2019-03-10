@@ -1,11 +1,11 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 2.0.2
+Version: 2.1
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
-Requires at least: 4.4
-Requires PHP: 5.5
-Tested up to: 4.9
+Requires at least: 4.6
+Requires PHP: 5.6
+Tested up to: 5.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -100,6 +100,9 @@ No. This plugin requires the plugin versions of bbPress 2.5 or higher.
 = Click on Quote button doesn't add quoted content? =
 This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled. If that doesn't help, make sure to enable 'Always Include' option too.
 
+= Sometimes quoted content when saved appears broken? =
+The quote itself doesn't strip HTML, but bbPress does. If the quoted section contains HTML tags or tag attributes that bbPress doesn't allow, it will strip them when the reply is saved. To solve that, you need to use the option to control allowed HTML tags in topics and replies.
+
 = Some features not working with BuddyPress group forums? =
 This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled and 'Always Include' option is also enabled.
 
@@ -119,6 +122,10 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements.
 
 == Changelog ==
+= 2.1 - 2018.03.15 =
+* New option to change allowed HTML tags and attributes for topics and replies
+* Few minor updates and changes
+
 = 2.0.2 - 2018.08.22 =
 * Changed default BBCode option to load on bbPress pages only to enabled
 * Updated BBCodes information for potential issue with BuddyPress
