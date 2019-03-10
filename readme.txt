@@ -16,6 +16,7 @@ Adds different expansions and tools to the bbPress plugin powered forums: BBCode
 Adds various expansions and tools to the bbPress plugin implemented forums. Currently included features:
 
 * Quote Reply or Topic
+* Change allowed HTML tags and attributes
 * User signature with BBCode and HTML support
 * Signature field in BuddyPress profile edit
 * Toolbar menu integration
@@ -29,14 +30,15 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 * Topics View: Topics by freshness
 
 = bbPress Plugin Versions =
-GD bbPress Tools 2.0 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
+GD bbPress Tools 2.1 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
 
 = BuddyPress Support =
-GD bbPress Tools 2.0 is tested with BuddyPress 3.0 using bbPress for Groups forums. Make sure you enable JavaScript and CSS Settings Always Include option in the plugin settings.
+GD bbPress Tools 2.1 is tested with BuddyPress 4.0 using bbPress. Make sure you enable JavaScript and CSS Settings Always Include option in the plugin settings.
 
 = More free dev4Press.com plugins for bbPress =
 * [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
 * [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
+* [GD Power Search](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
 
 = Upgrade to GD bbPress Toolbox Pro =
 Pro version contains many more great features:
@@ -71,16 +73,17 @@ With more features on the roadmap exclusively for Pro version.
 
 = Premium dev4Press.com plugins for bbPress =
 * [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) - collection of features for bbPress
+* [GD Quantum Theme Pro](https://plugins.dev4press.com/gd-quantum-theme-for-bbpress/) - add new theme package to bbPress
+* [GD Power Search Pro](https://plugins.dev4press.com/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
 * [GD Topic Polls Pro](https://plugins.dev4press.com/gd-topic-polls/) - add polls to the bbPress topics
 * [GD Topic Prefix Pro](https://plugins.dev4press.com/gd-topic-prefix/) - add customizable bbPress topic prefixes
-* [GD Content Tools Pro](https://plugins.dev4press.com/gd-content-tools/) - meta box for the topic and reply form
 
 == Installation ==
 = General Requirements =
-* PHP: 5.5 or newer
+* PHP: 5.6 or newer
 
 = WordPress Requirements =
-* WordPress: 4.4 or newer
+* WordPress: 4.6 or newer
 
 = bbPress Requirements =
 * bbPress Plugin: 2.5 or newer
@@ -118,18 +121,18 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 * German: David Decker - https://deckerweb.de/
 
 == Upgrade Notice ==
-= 2.0 =
-New plugin interface. Tweaks panel with 3 new tweaks. New topics view for Freshness. Updated WordPress and PHP requirements.
+= 2.1 =
+New option to change allowed HTML tags and attributes for topics and replies. Updated readme.txt file and included FAQ list.
 
 == Changelog ==
-= 2.1 - 2018.03.15 =
+= 2.1 - 2018.03.11 =
 * New option to change allowed HTML tags and attributes for topics and replies
-* Few minor updates and changes
+* Updated readme.txt file and included FAQ list
 
 = 2.0.2 - 2018.08.22 =
 * Changed default BBCode option to load on bbPress pages only to enabled
 * Updated BBCodes information for potential issue with BuddyPress
-* Updated readme.txt file and the include FAQ list
+* Updated readme.txt file and included FAQ list
 * Minor core code changes and improvements
 
 = 2.0.1 - 2018.07.27 =

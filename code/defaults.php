@@ -19,6 +19,7 @@ class gdbbPressTools_Defaults {
         'toolbar_super_admin' => 1,
         'toolbar_roles' => null,
         'allowed_tags_div' => 1,
+        'kses_allowed_override' => 'bbpress',
         'tweak_tags_in_reply_for_authors_only' => 0,
         'tweak_show_lead_topic' => 0,
         'tweak_disable_breadcrumbs' => 0,
