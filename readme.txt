@@ -125,7 +125,7 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 New option to change allowed HTML tags and attributes for topics and replies. Updated readme.txt file and included FAQ list.
 
 == Changelog ==
-= 2.1 - 2018.03.11 =
+= 2.1 - 2018.03.10 =
 * New option to change allowed HTML tags and attributes for topics and replies
 * Updated readme.txt file and included FAQ list
 

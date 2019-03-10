@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) exit;
 class gdbbPressTools_Defaults {
     var $default_options = array(
         'version' => '2.1',
-        'date' => '2019.03.15.',
+        'date' => '2019.03.10.',
         'build' => 2210,
         'status' => 'stable',
         'update_wp44' => 0,
