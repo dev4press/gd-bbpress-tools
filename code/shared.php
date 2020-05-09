@@ -205,3 +205,15 @@ if (!function_exists('d4p_bbp_update_shorthand_bbcodes')) {
 function d4p_bbt_o($name) {
     return GDBTOCore::instance()->o[$name];
 }
+
+function d4p_bbt_is_bbpress_post_type($post_type) {
+    if (in_array($post_type, array(
+        bbp_get_forum_post_type(),
+        bbp_get_topic_post_type(),
+        bbp_get_reply_post_type()
+    ))) {
+        return true;
+    } else {
+        return false;
+    }
+}

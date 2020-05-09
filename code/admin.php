@@ -39,6 +39,9 @@ class GDBTOAdmin {
             GDBTOCore::instance()->o['tweak_disable_breadcrumbs'] = isset($_POST['tweak_disable_breadcrumbs']) ? 1 : 0;
             GDBTOCore::instance()->o['tweak_tags_in_reply_for_authors_only'] = isset($_POST['tweak_tags_in_reply_for_authors_only']) ? 1 : 0;
             GDBTOCore::instance()->o['tweak_show_lead_topic'] = isset($_POST['tweak_show_lead_topic']) ? 1 : 0;
+            GDBTOCore::instance()->o['tweak_remove_private_title_prefix'] = isset($_POST['tweak_remove_private_title_prefix']) ? 1 : 0;
+            GDBTOCore::instance()->o['tweak_topic_load_search_for_all_topics'] = isset($_POST['tweak_topic_load_search_for_all_topics']) ? 1 : 0;
+            GDBTOCore::instance()->o['tweak_forum_load_search_for_all_forums'] = isset($_POST['tweak_forum_load_search_for_all_forums']) ? 1 : 0;
 
             update_option('gd-bbpress-tools', GDBTOCore::instance()->o);
             wp_redirect(add_query_arg('settings-updated', 'true'));

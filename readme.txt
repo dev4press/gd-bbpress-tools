@@ -121,6 +121,9 @@ Various updates, improvements and fixes.
 
 == Changelog ==
 = 3.0 - 2020.05.09 =
+* New Tweak to remove forum and topic Private prefix
+* New Tweak to load search form on top of all forums
+* New Tweak to load search form on top of all topics
 * New reorganized plugin code and the way it is loaded and run
 * New rewritten loading of JavaScript and CSS files
 * New fully reorganized CSS now written using SCSS

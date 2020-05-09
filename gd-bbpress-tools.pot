@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
 "Project-Id-Version: gd-bbpress-tools\n"
-"POT-Creation-Date: 05/09/2020 11:59:20 AM\n"
+"POT-Creation-Date: 05/09/2020 05:10:12 PM\n"
 "Language-Team: Milan Petrovic <support@dev4press.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -231,7 +231,7 @@ msgid "Replies"
 msgstr ""
 
 #: code/mods/toolbar.php:152
-#: code/admin.php:142
+#: code/admin.php:145
 #: forms/panels.php:5
 #: forms/panels.php:5
 msgid "Settings"
@@ -250,7 +250,7 @@ msgid "GD bbPress Attachments"
 msgstr ""
 
 #: code/mods/toolbar.php:183
-#: code/admin.php:129
+#: code/admin.php:132
 msgid "Tools"
 msgstr ""
 
@@ -283,75 +283,75 @@ msgstr ""
 msgid "Topics Freshness"
 msgstr ""
 
-#: code/admin.php:151
+#: code/admin.php:154
 msgid "Upgrade to GD bbPress Toolbox Pro"
 msgstr ""
 
-#: code/admin.php:162
+#: code/admin.php:165
 msgid "Website"
 msgstr ""
 
-#: code/admin.php:163
+#: code/admin.php:166
 msgid "On Twitter"
 msgstr ""
 
-#: code/admin.php:164
+#: code/admin.php:167
 msgid "On Facebook"
 msgstr ""
 
-#: code/admin.php:168
+#: code/admin.php:171
 msgid "Get Help"
 msgstr ""
 
-#: code/admin.php:169
+#: code/admin.php:172
 msgid "General Plugin Information"
 msgstr ""
 
-#: code/admin.php:170
+#: code/admin.php:173
 msgid "Home Page on Dev4Press.com"
 msgstr ""
 
-#: code/admin.php:171
+#: code/admin.php:174
 msgid "Home Page on WordPress.org"
 msgstr ""
 
-#: code/admin.php:172
+#: code/admin.php:175
 msgid "Getting Plugin Support"
 msgstr ""
 
-#: code/admin.php:173
+#: code/admin.php:176
 msgid "Support Forum on Dev4Press.com"
 msgstr ""
 
-#: code/admin.php:174
+#: code/admin.php:177
 msgid "Support Forum on WordPress.org"
 msgstr ""
 
-#: code/admin.php:179
+#: code/admin.php:182
 msgid "On Dev4Press website you can find many useful plugins, themes and tutorials, all for WordPress. Please, take a few minutes to browse some of these resources, you might find some of them very useful."
 msgstr ""
 
-#: code/admin.php:180
+#: code/admin.php:183
 msgid "Plugins"
 msgstr ""
 
-#: code/admin.php:180
+#: code/admin.php:183
 msgid "We have more than 10 plugins available, some of them are commercial and some are available for free."
 msgstr ""
 
-#: code/admin.php:181
+#: code/admin.php:184
 msgid "Knowledge Base"
 msgstr ""
 
-#: code/admin.php:181
+#: code/admin.php:184
 msgid "Premium and free tutorials for our plugins themes, and many general and practical WordPress tutorials."
 msgstr ""
 
-#: code/admin.php:182
+#: code/admin.php:185
 msgid "Support Forums"
 msgstr ""
 
-#: code/admin.php:182
+#: code/admin.php:185
 msgid "Premium support forum for all with valid licenses to get help. Also, report bugs and leave suggestions."
 msgstr ""
 
@@ -526,6 +526,7 @@ msgstr ""
 #: forms/tabs/tweaks.php:15
 #: forms/tabs/tweaks.php:30
 #: forms/tabs/tweaks.php:45
+#: forms/tabs/tweaks.php:60
 #: forms/tabs/views.php:15
 #: forms/tabs/views.php:30
 #: forms/tabs/views.php:45
@@ -631,7 +632,7 @@ msgstr ""
 
 #: forms/tabs/bbcode.php:249
 #: forms/tabs/tools.php:312
-#: forms/tabs/tweaks.php:55
+#: forms/tabs/tweaks.php:91
 #: forms/tabs/views.php:55
 msgid "Save Changes"
 msgstr ""
@@ -868,6 +869,30 @@ msgstr ""
 
 #: forms/tabs/tweaks.php:41
 msgid "If activated, bbPress will show main thread topic on top separated from replies."
+msgstr ""
+
+#: forms/tabs/tweaks.php:55
+msgid "Remove private title prefix"
+msgstr ""
+
+#: forms/tabs/tweaks.php:56
+msgid "WordPress adds 'Private' prefix to private forums or topic titles. With this option, you can remove this prefix."
+msgstr ""
+
+#: forms/tabs/tweaks.php:70
+msgid "Search Form"
+msgstr ""
+
+#: forms/tabs/tweaks.php:71
+msgid "Add standard bbPress search form on top of the page for all single forums and/or single topics."
+msgstr ""
+
+#: forms/tabs/tweaks.php:75
+msgid "Single Forums"
+msgstr ""
+
+#: forms/tabs/tweaks.php:81
+msgid "Single Topics"
 msgstr ""
 
 #: forms/tabs/views.php:11
