@@ -26,7 +26,7 @@ class GDBTOModQuote {
             $id = bbp_get_topic_id();
         }
 
-        if (d4p_bbt_o('quote_method', 'tools') == 'html') {
+        if (d4p_bbt_o('quote_method') == 'html') {
             if ($is_reply) {
                 $url = bbp_get_reply_url($id);
                 $ath = bbp_get_reply_author_display_name($id);

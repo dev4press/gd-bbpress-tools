@@ -6,7 +6,9 @@ if (!defined('ABSPATH')) {
 
 class GDBTOFront {
     function __construct() {
-        add_action('bbtoolbox_core', array($this, 'load'));
+        $this->register_scripts_and_styles();
+
+        add_action('wp_enqueue_scripts', array($this, 'wp_enqueue_scripts'));
     }
 
     public static function instance() {
@@ -19,38 +21,28 @@ class GDBTOFront {
         return $instance;
     }
 
-    public function load() {
-        add_action('bbp_head', array($this, 'bbp_head'));
-        add_action('wp_enqueue_scripts', array($this, 'wp_enqueue_scripts'));
+    public function register_scripts_and_styles() {
+        $debug = defined('SCRIPT_DEBUG') ? SCRIPT_DEBUG : false;
+        $files = 'front'.($debug ? '' : '.min');
+
+        wp_register_style('gdbto-front', GDBBPRESSTOOLS_URL.'css/'.$files.'.css', array(), GDBBPRESSTOOLS_VERSION);
+        wp_register_script('gdbto-front', GDBBPRESSTOOLS_URL.'js/'.$files.'.js', array('jquery'), GDBBPRESSTOOLS_VERSION, true);
+    }
+
+    public function include_scripts_and_styles() {
+        wp_enqueue_style('gdbto-front');
+        wp_enqueue_script('gdbto-front');
+
+        wp_localize_script('gdbto-front', 'gdbbPressToolsInit', array(
+            'quote_method' => d4p_bbt_o('quote_method'),
+            'quote_wrote' => _x("wrote", "Username quote suffix", "gd-bbpress-tools"),
+            'wp_editor' => d4p_bbpress_version() > 20 ? (bbp_use_wp_editor() ? 1 : 0) : 0
+        ));
     }
 
     public function wp_enqueue_scripts() {
         if (d4p_bbt_o('include_always') == 1 || d4p_is_bbpress()) {
-            if (d4p_bbt_o('include_css') == 1) {
-                wp_enqueue_style('d4p-bbtools', GDBBPRESSTOOLS_URL.'css/front.css', array(), GDBBPRESSTOOLS_VERSION);
-            }
-
-            if (d4p_bbt_o('include_js') == 1) {
-                wp_enqueue_script('jquery');
-                wp_enqueue_script('d4p-bbtools', GDBBPRESSTOOLS_URL.'js/front.js', array('jquery'), GDBBPRESSTOOLS_VERSION, true);
-            }
+            $this->include_scripts_and_styles();
         }
-    }
-
-    public function bbp_head() {
-        if (d4p_bbt_o('include_always') == 1 || d4p_is_bbpress()) {
-
-            ?>
-            <script type="text/javascript">
-                /* <![CDATA[ */
-                var gdbbPressToolsInit = {
-                    quote_method: "<?php echo d4p_bbt_o('quote_method'); ?>",
-                    quote_wrote: "<?php echo __("wrote", "gd-bbpress-tools"); ?>",
-                    bbpress_version: <?php echo d4p_bbpress_version(); ?>,
-                    wp_version: <?php echo GDBBPRESSTOOLS_WPV; ?>,
-                    wp_editor: <?php echo d4p_bbpress_version() > 20 ? (bbp_use_wp_editor() ? 1 : 0) : 0; ?>
-                };
-                /* ]]> */
-            </script><?php }
     }
 }

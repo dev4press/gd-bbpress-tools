@@ -14,8 +14,6 @@ class GDBTODefaults {
         'edition' => 'free',
         'revision' => 0,
         'include_always' => 0,
-        'include_js' => 1,
-        'include_css' => 1,
         'toolbar_active' => 1,
         'toolbar_super_admin' => 1,
         'toolbar_roles' => null,

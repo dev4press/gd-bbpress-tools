@@ -13,7 +13,7 @@
 
     <fieldset>
         <h3><?php _e("Special upgrade discount", "gd-bbpress-tools"); ?></h3>
-        <p><?php echo sprintf(__("Buy GD bbPress Toolbox Pro license or Dev4Press Plugins Club Mmbership license and get %s discount using this coupon", "gd-bbpress-tools"), '<strong>10%</strong>'); ?>:<br/>
+        <p><?php echo sprintf(__("Buy GD bbPress Toolbox Pro license or Dev4Press Plugins Club Membership license and get %s discount using this coupon", "gd-bbpress-tools"), '<strong>10%</strong>'); ?>:<br/>
             <strong style="color: #c00; font-size: 20px;">BBFREETOPRO</strong></p>
     </fieldset>
 

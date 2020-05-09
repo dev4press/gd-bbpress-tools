@@ -8,39 +8,6 @@
     <?php wp_nonce_field("gd-bbpress-tools"); ?>
     <div class="d4p-settings">
         <fieldset>
-            <h3><?php _e("JavaScript and CSS Settings", "gd-bbpress-tools"); ?></h3>
-            <p><?php _e("You can disable including styles and JavaScript by the plugin, if you want to do it some other way.", "gd-bbpress-tools"); ?></p>
-            <table class="form-table">
-                <tbody>
-                    <tr valign="top">
-                        <th scope="row"><label for="include_js"><?php _e("Include JavaScript", "gd-bbpress-tools"); ?></label></th>
-                        <td>
-                            <input type="checkbox" <?php if ($options["include_js"] == 1) echo " checked"; ?> name="include_js" />
-                        </td>
-                    </tr>
-                    <tr valign="top">
-                        <th scope="row"><label for="include_css"><?php _e("Include CSS", "gd-bbpress-tools"); ?></label></th>
-                        <td>
-                            <input type="checkbox" <?php if ($options["include_css"] == 1) echo " checked"; ?> name="include_css" />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><?php _e("If you use shortcodes to embed forums, and you rely on plugin to add JS and CSS, you also need to enable this option to skip checking for bbPress specific pages.", "gd-bbpress-tools"); ?></p>
-            <table class="form-table">
-                <tbody>
-                    <tr valign="top">
-                        <th scope="row"><label for="include_always"><?php _e("Always Include", "gd-bbpress-tools"); ?></label></th>
-                        <td>
-                            <input type="checkbox" <?php if ($options["include_always"] == 1) echo " checked"; ?> name="include_always" />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><?php _e("Enable this option if you use BuddyPress with bbPress plugin for site wide forums.", "gd-bbpress-tools"); ?></p>
-        </fieldset>
-
-        <fieldset>
             <h3><?php _e("Allowed HTML tags and attributes", "gd-bbpress-tools"); ?></h3>
             <p><?php _e("By default, only keymasters can post unrestricted HTML, other users are limited to a very small subset of tags. With this option, you can change the scope of tags and tag attributes bbPress will allow for topics and replies.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
@@ -322,6 +289,22 @@
                             <strong>d4p_bbpt_admin_disable</strong>
                         </td>
                     </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <h3><?php _e("JavaScript and CSS Settings", "gd-bbpress-tools"); ?></h3>
+            <p><?php _e("If you use shortcodes to embed forums, and you rely on plugin to add JS and CSS, you also need to enable this option to skip checking for bbPress specific pages.", "gd-bbpress-tools"); ?></p>
+            <p><?php _e("Plugin will attempt to load files automatically when needed. If that fails, try using this option.", "gd-bbpress-tools"); ?></p>
+            <table class="form-table">
+                <tbody>
+                <tr valign="top">
+                    <th scope="row"><label for="include_always"><?php _e("Always Include", "gd-bbpress-tools"); ?></label></th>
+                    <td>
+                        <input type="checkbox" <?php if ($options["include_always"] == 1) echo " checked"; ?> name="include_always" />
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </fieldset>

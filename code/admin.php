@@ -92,8 +92,6 @@ class GDBTOAdmin {
             check_admin_referer('gd-bbpress-tools');
 
             GDBTOCore::instance()->o['include_always'] = isset($_POST['include_always']) ? 1 : 0;
-            GDBTOCore::instance()->o['include_js'] = isset($_POST['include_js']) ? 1 : 0;
-            GDBTOCore::instance()->o['include_css'] = isset($_POST['include_css']) ? 1 : 0;
             GDBTOCore::instance()->o['allowed_tags_div'] = isset($_POST['allowed_tags_div']) ? 1 : 0;
             GDBTOCore::instance()->o['kses_allowed_override'] = d4p_sanitize_basic($_POST['kses_allowed_override']);
             GDBTOCore::instance()->o['quote_active'] = isset($_POST['quote_active']) ? 1 : 0;

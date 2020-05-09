@@ -47,11 +47,7 @@
                     }
 
                     if (gdbbPressToolsInit.wp_editor == 1 && !$("#bbp_reply_content").is(":visible")) {
-                        if (gdbbPressToolsInit.wp_version > 38) {
-                            tinymce.get("bbp_reply_content").execCommand("mceInsertContent", false, qout);
-                        } else {
-                            tinyMCE.execInstanceCommand("bbp_reply_content", "mceInsertContent", false, qout);
-                        }
+                        tinymce.get("bbp_reply_content").execCommand("mceInsertContent", false, qout);
                     } else {
                         var txtr = $("#bbp_reply_content");
                         var cntn = txtr.val();

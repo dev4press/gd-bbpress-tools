@@ -173,7 +173,7 @@ class GDBTOModToolbar {
                 $wp_admin_bar->add_menu(array(
                     'parent' => 'gdbb-toolbar-settings-third',
                     'id' => 'gdbb-toolbar-settings-third-attachments',
-                    'title' => __("GD bbPress Attchments", "gd-bbpress-tools"),
+                    'title' => __("GD bbPress Attachments", "gd-bbpress-tools"),
                     'href' => admin_url('edit.php?post_type=forum&page=gdbbpress_attachments')
                 ));
             }

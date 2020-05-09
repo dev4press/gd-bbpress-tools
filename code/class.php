@@ -73,7 +73,7 @@ class GDBTOCore {
         define('GDBBPRESSTOOLS_INSTALLED', $gdd->default_options['version'].' Free');
         define('GDBBPRESSTOOLS_VERSION', $gdd->default_options['version'].'_b'.($gdd->default_options['build'].'_free'));
 
-        $this->plugin_path = dirname(dirname(dirname(__FILE__))).'/';
+        $this->plugin_path = dirname(dirname(__FILE__)).'/';
         $this->plugin_url = plugins_url('/gd-bbpress-tools/');
 
         define('GDBBPRESSTOOLS_URL', $this->plugin_url);
@@ -234,7 +234,6 @@ class GDBTOCore {
                 'href' => true,
                 'title' => true,
                 'rel' => true,
-                'class' => true,
                 'style' => true,
                 'download' => true,
                 'target' => true
