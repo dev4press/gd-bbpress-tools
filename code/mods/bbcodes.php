@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class GDBTOModShortcodes {
     private $advanced = array('url', 'google', 'youtube', 'note');
@@ -213,7 +215,7 @@ class GDBTOModShortcodes {
 
         foreach ($atts as $key => $value) {
             if (isset($attributes[$key]) && ($key == 'class' || $key == 'style')) {
-                $attributes[$key].= ' '.$value;
+                $attributes[$key] .= ' '.$value;
             } else {
                 $attributes[$key] = $value;
             }
@@ -221,7 +223,7 @@ class GDBTOModShortcodes {
 
         foreach ($args as $key => $value) {
             if (isset($attributes[$key]) && ($key == 'class' || $key == 'style')) {
-                $attributes[$key].= ' '.$value;
+                $attributes[$key] .= ' '.$value;
             } else {
                 $attributes[$key] = $value;
             }
@@ -231,16 +233,16 @@ class GDBTOModShortcodes {
 
         foreach ($attributes as $key => $value) {
             if (trim($value) != '' && $key != 'raw' && $key != $name) {
-                $render.= ' '.$key.'="'.trim($value).'"';
+                $render .= ' '.$key.'="'.trim($value).'"';
             }
         }
 
         if (is_null($content)) {
-            $render.= ' />';
+            $render .= ' />';
         } else {
-            $render.= '>';
-            $render.= $this->_content($content, $atts['raw'] == 1);
-            $render.= '</'.$tag.'>';
+            $render .= '>';
+            $render .= $this->_content($content, $atts['raw'] == 1);
+            $render .= '</'.$tag.'>';
         }
 
         return $render;
@@ -262,36 +264,36 @@ class GDBTOModShortcodes {
     }
 
     private function _regex($list) {
-	$tagregexp = join('|', $list);
+        $tagregexp = join('|', $list);
 
-	return    '\\['
-		. '(\\[?)'
-		. "($tagregexp)"
-		. '\\b'
-		. '('
-		.     '[^\\]\\/]*'
-		.     '(?:'
-		.         '\\/(?!\\])'
-		.         '[^\\]\\/]*'
-		.     ')*?'
-		. ')'
-		. '(?:'
-		.     '(\\/)'
-		.     '\\]'
-		. '|'
-		.     '\\]'
-		.     '(?:'
-		.         '('
-		.             '[^\\[]*+'
-		.             '(?:'
-		.                 '\\[(?!\\/\\2\\])'
-		.                 '[^\\[]*+'
-		.             ')*+'
-		.         ')'
-		.         '\\[\\/\\2\\]'
-		.     ')?'
-		. ')'
-		. '(\\]?)';
+        return '\\['
+            .'(\\[?)'
+            ."($tagregexp)"
+            .'\\b'
+            .'('
+            .'[^\\]\\/]*'
+            .'(?:'
+            .'\\/(?!\\])'
+            .'[^\\]\\/]*'
+            .')*?'
+            .')'
+            .'(?:'
+            .'(\\/)'
+            .'\\]'
+            .'|'
+            .'\\]'
+            .'(?:'
+            .'('
+            .'[^\\[]*+'
+            .'(?:'
+            .'\\[(?!\\/\\2\\])'
+            .'[^\\[]*+'
+            .')*+'
+            .')'
+            .'\\[\\/\\2\\]'
+            .')?'
+            .')'
+            .'(\\]?)';
 
     }
 
@@ -415,7 +417,7 @@ class GDBTOModShortcodes {
             $args['style'] = 'font-size: '.$atts['size'];
 
             if (is_numeric($atts['size'])) {
-                $args['style'].= 'px';
+                $args['style'] .= 'px';
             }
 
             unset($atts['size']);
@@ -567,12 +569,12 @@ class GDBTOModShortcodes {
         $link = $protocol.'://www.google.';
 
         if ($atts['google'] != '') {
-            $link.= $atts['google'];
+            $link .= $atts['google'];
         } else {
-            $link.= 'com';
+            $link .= 'com';
         }
 
-        $link.= '/search?q='.urlencode($content);
+        $link .= '/search?q='.urlencode($content);
 
         $args['href'] = $link;
 
@@ -611,8 +613,12 @@ class GDBTOModShortcodes {
         }
 
         $data = array();
-        if ($atts['width'] > 0) $data['width'] = $atts['width'];
-        if ($atts['height'] > 0) $data['height'] = $atts['height'];
+        if ($atts['width'] > 0) {
+            $data['width'] = $atts['width'];
+        }
+        if ($atts['height'] > 0) {
+            $data['height'] = $atts['height'];
+        }
 
         global $wp_embed;
         return $wp_embed->shortcode($data, $url);
@@ -650,8 +656,12 @@ class GDBTOModShortcodes {
         }
 
         $data = array();
-        if ($atts['width'] > 0) $data['width'] = $atts['width'];
-        if ($atts['height'] > 0) $data['height'] = $atts['height'];
+        if ($atts['width'] > 0) {
+            $data['width'] = $atts['width'];
+        }
+        if ($atts['height'] > 0) {
+            $data['height'] = $atts['height'];
+        }
 
         global $wp_embed;
         return $wp_embed->shortcode($data, $url);
@@ -672,8 +682,6 @@ class GDBTOModShortcodes {
 
 if (!function_exists('gdbbx_render_the_bbcode')) {
     function gdbbx_render_the_bbcode($name, $atts, $content = null) {
-
-
         $_mod = GDBTOCore::instance()->mod['s'];
 
         if (method_exists($_mod, 'shortcode_'.$name)) {

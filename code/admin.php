@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class GDBTOAdmin {
     private $page_ids = array();
@@ -125,7 +127,7 @@ class GDBTOAdmin {
             wp_enqueue_style('gd-bbpress-tools', GDBBPRESSTOOLS_URL."css/admin.css", array(), GDBBPRESSTOOLS_VERSION);
         }
     }
-    
+
     public function admin_menu() {
         $this->page_ids[] = add_submenu_page('edit.php?post_type=forum', 'GD bbPress Tools', __("Tools", "gd-bbpress-tools"), GDBBPRESSTOOLS_CAP, 'gdbbpress_tools', array($this, 'menu_tools'));
 
@@ -139,7 +141,7 @@ class GDBTOAdmin {
     }
 
     public function plugin_actions($links, $file) {
-        if ($file == 'gd-bbpress-tools/gd-bbpress-tools.php' ){
+        if ($file == 'gd-bbpress-tools/gd-bbpress-tools.php') {
             $settings_link = '<a href="edit.php?post_type=forum&page=gdbbpress_tools">'.__("Settings", "gd-bbpress-tools").'</a>';
             array_unshift($links, $settings_link);
         }
@@ -148,7 +150,7 @@ class GDBTOAdmin {
     }
 
     function plugin_links($links, $file) {
-        if ($file == 'gd-bbpress-tools/gd-bbpress-tools.php'){
+        if ($file == 'gd-bbpress-tools/gd-bbpress-tools.php') {
             $links[] = '<a target="_blank" style="color: #cc0000; font-weight: bold;" href="https://plugins.dev4press.com/gd-bbpress-toolbox/">'.__("Upgrade to GD bbPress Toolbox Pro", "gd-bbpress-tools").'</a>';
         }
 

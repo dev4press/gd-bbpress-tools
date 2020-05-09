@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class GDBTODefaults {
     var $default_options = array(
@@ -59,5 +61,6 @@ class GDBTODefaults {
         'd4p_bbpt_signature_enhanced'
     );
 
-    function __construct() { }
+    function __construct() {
+    }
 }

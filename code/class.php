@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class GDBTOCore {
     private $wp_version;
@@ -13,11 +15,11 @@ class GDBTOCore {
     public $is_search = false;
 
     public $mod = array(
-        'a' => null, 
-        'i' => null, 
-        's' => null, 
-        'q' => null, 
-        't' => null, 
+        'a' => null,
+        'i' => null,
+        's' => null,
+        'q' => null,
+        't' => null,
         'v' => null,
         'w' => null
     );
@@ -80,12 +82,16 @@ class GDBTOCore {
 
     private function _upgrade($old, $new) {
         foreach ($new as $key => $value) {
-            if (!isset($old[$key])) $old[$key] = $value;
+            if (!isset($old[$key])) {
+                $old[$key] = $value;
+            }
         }
 
         $unset = array();
         foreach ($old as $key => $value) {
-            if (!isset($new[$key])) $unset[] = $key;
+            if (!isset($new[$key])) {
+                $unset[] = $key;
+            }
         }
 
         foreach ($unset as $key) {
@@ -119,8 +125,8 @@ class GDBTOCore {
                 require_once(GDBBPRESSTOOLS_PATH.'code/mods/quote.php');
 
                 $this->mod['q'] = new GDBTOModQuote(
-                        $this->o['quote_location'], 
-                        $this->o['quote_method']);
+                    $this->o['quote_location'],
+                    $this->o['quote_method']);
             }
         }
 
@@ -128,10 +134,10 @@ class GDBTOCore {
             require_once(GDBBPRESSTOOLS_PATH.'code/mods/signature.php');
 
             $this->mod['i'] = new GDBTOModSignature(
-                    $this->o['signature_length'], 
-                    d4p_bbp_is_role('signature_enhanced'),
-                    $this->o['signature_method'],
-                    $this->o['signature_buddypress_profile_group']);
+                $this->o['signature_length'],
+                d4p_bbp_is_role('signature_enhanced'),
+                $this->o['signature_method'],
+                $this->o['signature_buddypress_profile_group']);
             $this->mod['i']->active = d4p_bbp_is_role('signature');
         }
 
@@ -139,11 +145,11 @@ class GDBTOCore {
             require_once(GDBBPRESSTOOLS_PATH.'code/mods/bbcodes.php');
 
             $this->mod['s'] = new GDBTOModShortcodes(
-                    $this->o['bbcodes_bbpress_only'] == 1, 
-                    !d4p_bbp_is_role('bbcodes_special'),
-                    'info',
-                    $this->o['bbcodes_deactivated'],
-                    $this->o['bbcodes_notice'] == 1);
+                $this->o['bbcodes_bbpress_only'] == 1,
+                !d4p_bbp_is_role('bbcodes_special'),
+                'info',
+                $this->o['bbcodes_deactivated'],
+                $this->o['bbcodes_notice'] == 1);
         }
 
         if ($this->o['toolbar_active'] == 1 && d4p_bbp_is_role('toolbar')) {
@@ -175,7 +181,7 @@ class GDBTOCore {
             require_once(GDBBPRESSTOOLS_PATH.'code/mods/views.php');
 
             $this->mod['v'] = new GDBTOModViews(
-                    $views);
+                $views);
         }
     }
 

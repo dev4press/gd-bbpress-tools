@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class GDBTOFront {
     function __construct() {
@@ -35,19 +37,20 @@ class GDBTOFront {
         }
     }
 
-    public function bbp_head() { 
+    public function bbp_head() {
         if (d4p_bbt_o('include_always') == 1 || d4p_is_bbpress()) {
 
-        ?><script type="text/javascript">
-            /* <![CDATA[ */
-            var gdbbPressToolsInit = {
-                quote_method: "<?php echo d4p_bbt_o('quote_method'); ?>",
-                quote_wrote: "<?php echo __("wrote", "gd-bbpress-tools"); ?>",
-                bbpress_version: <?php echo d4p_bbpress_version(); ?>,
-                wp_version: <?php echo GDBBPRESSTOOLS_WPV; ?>,
-                wp_editor: <?php echo d4p_bbpress_version() > 20 ? (bbp_use_wp_editor() ? 1 : 0) : 0; ?>
-            };
-            /* ]]> */
-        </script><?php }
+            ?>
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                var gdbbPressToolsInit = {
+                    quote_method: "<?php echo d4p_bbt_o('quote_method'); ?>",
+                    quote_wrote: "<?php echo __("wrote", "gd-bbpress-tools"); ?>",
+                    bbpress_version: <?php echo d4p_bbpress_version(); ?>,
+                    wp_version: <?php echo GDBBPRESSTOOLS_WPV; ?>,
+                    wp_editor: <?php echo d4p_bbpress_version() > 20 ? (bbp_use_wp_editor() ? 1 : 0) : 0; ?>
+                };
+                /* ]]> */
+            </script><?php }
     }
 }

@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class GDBTOModQuote {
     private $header = false;
@@ -25,8 +27,6 @@ class GDBTOModQuote {
         }
 
         if (d4p_bbt_o('quote_method', 'tools') == 'html') {
-            $url = ''; $ath = '';
-
             if ($is_reply) {
                 $url = bbp_get_reply_url($id);
                 $ath = bbp_get_reply_author_display_name($id);
@@ -65,8 +65,8 @@ class GDBTOModQuote {
         remove_filter('bbp_get_reply_content', array($this, 'reply_content'));
         remove_filter('bbp_get_topic_content', array($this, 'reply_content'));
 
-        remove_filter('bbp_get_topic_admin_links', array($this, 'reply_links'), 10, 2);
-        remove_filter('bbp_get_reply_admin_links', array($this, 'reply_links'), 10, 2);
+        remove_filter('bbp_get_topic_admin_links', array($this, 'reply_links'), 10);
+        remove_filter('bbp_get_reply_admin_links', array($this, 'reply_links'), 10);
         remove_action('bbp_theme_after_topic_admin_links', array($this, 'after_reply_links'));
         remove_action('bbp_theme_after_reply_admin_links', array($this, 'after_reply_links'));
     }

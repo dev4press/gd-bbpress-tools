@@ -1,12 +1,15 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 if (!class_exists('gdbbp_Error')) {
     class gdbbp_Error {
         var $errors = array();
 
-        function __construct() { }
+        function __construct() {
+        }
 
         function add($code, $message, $data) {
             $this->errors[$code][] = array($message, $data);
@@ -19,7 +22,7 @@ if (!function_exists('d4p_bbpress_get_user_roles')) {
      * Get valid roles for forums based on bbPress version
      *
      * @return array list of roles
-    */
+     */
     function d4p_bbpress_get_user_roles() {
         $roles = array();
 
@@ -59,8 +62,9 @@ if (!function_exists('d4p_bbpress_version')) {
      * Get version of the bbPress.
      *
      * @param string $ret what version format to return: code or version
+     *
      * @return mixed version value
-    */
+     */
     function d4p_bbpress_version($ret = 'code') {
         if (!d4p_has_bbpress()) {
             return null;
@@ -82,10 +86,10 @@ if (!function_exists('d4p_bbpress_version')) {
 
 if (!function_exists('d4p_is_bbpress')) {
     /**
-    * Check if the current page is forum, topic or other bbPress page.
-    *
-    * @return bool true if the current page is the forum related
-    */
+     * Check if the current page is forum, topic or other bbPress page.
+     *
+     * @return bool true if the current page is the forum related
+     */
     function d4p_is_bbpress() {
         $is = d4p_has_bbpress() ? is_bbpress() : false;
 
@@ -95,10 +99,10 @@ if (!function_exists('d4p_is_bbpress')) {
 
 if (!function_exists('d4p_is_user_moderator')) {
     /**
-    * Checks to see if the currently logged user is moderator.
-    *
-    * @return bool is user moderator or not
-    */
+     * Checks to see if the currently logged user is moderator.
+     *
+     * @return bool is user moderator or not
+     */
     function d4p_is_user_moderator() {
         global $current_user;
 
@@ -112,10 +116,10 @@ if (!function_exists('d4p_is_user_moderator')) {
 
 if (!function_exists('d4p_is_user_admin')) {
     /**
-    * Checks to see if the currently logged user is administrator.
-    *
-    * @return bool is user administrator or not
-    */
+     * Checks to see if the currently logged user is administrator.
+     *
+     * @return bool is user administrator or not
+     */
     function d4p_is_user_admin() {
         global $current_user;
 

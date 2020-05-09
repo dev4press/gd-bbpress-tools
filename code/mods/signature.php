@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class GDBTOModSignature {
     public $active = false;
@@ -27,7 +29,7 @@ class GDBTOModSignature {
                 $this->html = true;
             }
         }
-        
+
         add_action('bbtoolbox_init', array($this, 'init'));
     }
 
@@ -54,12 +56,14 @@ class GDBTOModSignature {
     }
 
     public function remove_content_filters() {
-        remove_filter('bbp_get_topic_content', array($this, 'reply_content'), 10000, 2);
-        remove_filter('bbp_get_reply_content', array($this, 'reply_content'), 10000, 2);
+        remove_filter('bbp_get_topic_content', array($this, 'reply_content'), 10000);
+        remove_filter('bbp_get_reply_content', array($this, 'reply_content'), 10000);
     }
 
     public function editor_form_profile() {
-        if (!is_admin()) return;
+        if (!is_admin()) {
+            return;
+        }
 
         global $profileuser;
 
@@ -118,7 +122,7 @@ class GDBTOModSignature {
                 $message[] = __("BBCodes will be stripped.", "gd-bbpress-tools");
             }
         }
-        
+
         echo join(' ', $message);
     }
 
@@ -174,7 +178,7 @@ class GDBTOModSignature {
             $sig = shortcode_unautop($sig);
             $sig = do_shortcode($sig);
 
-            $content.= '<div class="bbp-signature">'.$sig.'</div>';
+            $content .= '<div class="bbp-signature">'.$sig.'</div>';
         }
 
         return $content;
