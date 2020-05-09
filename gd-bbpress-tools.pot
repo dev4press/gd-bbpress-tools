@@ -3,12 +3,12 @@ msgid ""
 msgstr ""
 "Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
 "Project-Id-Version: gd-bbpress-tools\n"
-"POT-Creation-Date: 09/02/2019 02:55:41 PM\n"
+"POT-Creation-Date: 05/09/2020 10:33:32 AM\n"
 "Language-Team: Milan Petrovic <support@dev4press.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: GD i18n 2.1\n"
+"X-Generator: GD i18n 2.2\n"
 
 #: code/mods/bbcodes.php:51
 #: forms/tabs/bbcode.php:117
@@ -252,8 +252,6 @@ msgstr ""
 
 #: code/mods/toolbar.php:180
 #: code/admin.php:58
-#: forms/panels.php:9
-#: forms/panels.php:9
 msgid "Tools"
 msgstr ""
 
@@ -892,27 +890,6 @@ msgstr ""
 msgid "If activated, bbPress will show main thread topic on top separated from replies."
 msgstr ""
 
-#: forms/tabs/update.php:6
-msgid "Database updated."
-msgstr ""
-
-#: forms/tabs/update.php:10
-#: forms/tabs/wp44.php:2
-msgid "WordPress 4.4: Update for shortcode parsing changes"
-msgstr ""
-
-#: forms/tabs/update.php:11
-msgid "WordPress 4.4 introduced some changes in the way it parses shortcodes, and this affected some of the BBCodes added by GD bbPress Tools plugin."
-msgstr ""
-
-#: forms/tabs/update.php:12
-msgid "Click here for more information and update"
-msgstr ""
-
-#: forms/tabs/update.php:6
-msgid "Total of %s posts are updated."
-msgstr ""
-
 #: forms/tabs/views.php:11
 msgid "This view will show list of topics with most replies."
 msgstr ""
@@ -931,42 +908,6 @@ msgstr ""
 
 #: forms/tabs/views.php:41
 msgid "This view will show list of topics ordered by freshness (latest activity)."
-msgstr ""
-
-#: forms/tabs/wp44.php:3
-msgid "WordPress 4.4 introduced some changes in the way it parses shortcodes, and this affected some of the BBCodes added by GD bbPress Tools."
-msgstr ""
-
-#: forms/tabs/wp44.php:4
-msgid "Solution"
-msgstr ""
-
-#: forms/tabs/wp44.php:5
-msgid "To fix the issue, plugin is updated to handle changes. But, all topics and replies created before contain BBCodes used in the way WordPress 4.4 no longer allows. The only way to fix this is to update all old topics and replies and replace old BBCodes with new BBCodes format. You can do it automatically using this tool (just click Auto Update button at the end of this page), or you can use SQL queries listed below and run them directly on your database."
-msgstr ""
-
-#: forms/tabs/wp44.php:6
-msgid "Disclaimer"
-msgstr ""
-
-#: forms/tabs/wp44.php:7
-msgid "This operation is not reversible, and before using this tool, make sure you have backup of your database (or at least 'posts' table) so you can restore it if something goes wrong."
-msgstr ""
-
-#: forms/tabs/wp44.php:17
-msgid "List of SQL queries"
-msgstr ""
-
-#: forms/tabs/wp44.php:22
-msgid "Auto Update"
-msgstr ""
-
-#: forms/tabs/wp44.php:23
-msgid "To perform auto update, click the button."
-msgstr ""
-
-#: forms/tabs/wp44.php:24
-msgid "Click here for auto update"
 msgstr ""
 
 #: forms/tools/signature_bbpress.php:0
@@ -1005,13 +946,13 @@ msgstr ""
 msgid "BBCodes"
 msgstr ""
 
-#: forms/panels.php:10
-#: forms/panels.php:10
+#: forms/panels.php:9
+#: forms/panels.php:9
 msgid "Dev4Press"
 msgstr ""
 
-#: forms/panels.php:11
-#: forms/panels.php:11
+#: forms/panels.php:10
+#: forms/panels.php:10
 msgid "About"
 msgstr ""
 

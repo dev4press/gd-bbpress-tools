@@ -10,24 +10,6 @@ class gdbbMod_Admin {
     }
 
     public function admin_init() {
-        if (isset($_GET['page']) && isset($_GET['run']) && isset($_GET['_nonce']) && $_GET['page'] == 'gdbbpress_tools' && $_GET['run'] == 'wp44') {
-            if (wp_verify_nonce($_GET['_nonce'], 'gdbbp-tools-wp44-update')) {
-                require_once(GDBBPRESSTOOLS_PATH.'code/tools/update.php');
-
-                $count = d4p_bbp_shortcodes_wp44_update();
-
-                global $gdbbpress_tools;
-
-                $gdbbpress_tools->o['update_wp44'] = 1;
-
-                update_option('gd-bbpress-tools', $gdbbpress_tools->o);
-
-                $url = admin_url('edit.php?post_type=forum&page=gdbbpress_tools&tab=update&count='.$count);
-                wp_redirect(add_query_arg('wp44-updated', 'true', $url));
-                exit();
-            }
-        }
-
         if (isset($_POST['gdbb-tweaks-submit'])) {
             global $gdbbpress_tools;
             check_admin_referer('gd-bbpress-tools');

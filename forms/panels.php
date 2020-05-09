@@ -7,8 +7,7 @@ $tabs = array(
     'tweaks' => '<span class="dashicons dashicons-lightbulb" title="'.__("Tweaks", "gd-bbpress-tools").'"></span><span class="tab-title"> '.__("Tweaks", "gd-bbpress-tools").'</span>', 
     'bbcode' => '<span class="dashicons dashicons-editor-code" title="'.__("BBCodes", "gd-bbpress-tools").'"></span><span class="tab-title"> '.__("BBCodes", "gd-bbpress-tools").'</span>', 
     'views' => '<span class="dashicons dashicons-visibility" title="'.__("Views", "gd-bbpress-tools").'"></span><span class="tab-title"> '.__("Views", "gd-bbpress-tools").'</span>', 
-    'update' => '<span class="dashicons dashicons-admin-tools" title="'.__("Tools", "gd-bbpress-tools").'"></span><span class="tab-title"> '.__("Tools", "gd-bbpress-tools").'</span>', 
-    'd4p' => '<span class="dashicons dashicons-flag" title="'.__("Dev4Press", "gd-bbpress-tools").'"></span><span class="tab-title"> '.__("Dev4Press", "gd-bbpress-tools").'</span>', 
+    'd4p' => '<span class="dashicons dashicons-flag" title="'.__("Dev4Press", "gd-bbpress-tools").'"></span><span class="tab-title"> '.__("Dev4Press", "gd-bbpress-tools").'</span>',
     'about' => '<span class="dashicons dashicons-info" title="'.__("About", "gd-bbpress-tools").'"></span><span class="tab-title"> '.__("About", "gd-bbpress-tools").'</span>'
 );
 
@@ -19,13 +18,6 @@ if (!isset($tabs[$current])) {
 $this->upgrade_notice();
 
 $to_load = $current;
-if ($current == 'update') {
-    if (isset($_GET['tool']) && isset($_GET['_nonce']) && $_GET['tool'] == 'wp44') {
-        if (wp_verify_nonce($_GET['_nonce'], 'gdbbp-tools-wp44')) {
-            $to_load = 'wp44';
-        }
-    }
-}
 
 ?>
 <div class="wrap">
