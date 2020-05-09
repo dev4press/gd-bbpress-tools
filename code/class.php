@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbPressTools {
+class GDBTOCore {
     private $wp_version;
     private $plugin_path;
     private $plugin_url;
@@ -30,6 +30,16 @@ class gdbbPressTools {
         add_action('bbp_init', array($this, 'load_plugin'), 3);
 
         add_action('bbp_init', array($this, 'hook_modules'));
+    }
+
+    public static function instance() {
+        static $instance = false;
+
+        if ($instance === false) {
+            $instance = new GDBTOCore();
+        }
+
+        return $instance;
     }
 
     private function _init() {
@@ -136,7 +146,7 @@ class gdbbPressTools {
                     $this->o['bbcodes_notice'] == 1);
         }
 
-        if (GDBBPRESSTOOLS_WPV > 32 && $this->o['toolbar_active'] == 1 && d4p_bbp_is_role('toolbar')) {
+        if ($this->o['toolbar_active'] == 1 && d4p_bbp_is_role('toolbar')) {
             require_once(GDBBPRESSTOOLS_PATH.'code/mods/toolbar.php');
 
             $this->mod['t'] = new gdbbMod_Toolbar();
@@ -360,6 +370,3 @@ class gdbbPressTools {
         );
     }
 }
-
-global $gdbbpress_tools;
-$gdbbpress_tools = new gdbbPressTools();

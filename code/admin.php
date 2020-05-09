@@ -18,34 +18,9 @@ class gdbbT_Admin {
         add_action('admin_enqueue_scripts', array($this, 'enqueue_files'));
     }
 
-    function upgrade_notice() {
-        global $gdbbpress_tools;
-
-        if ($gdbbpress_tools->o['update_wp44'] == 0) {
-            $no_thanks = add_query_arg('wp44updnotice', 'hide');
-
-            echo '<div class="updated d4p-updated">';
-            _e("Due to the changes in WordPress 4.4, you need to perform one time only quick update of your website data related to use of BBCodes and Quote feature.", "gd-bbpress-tools");
-            echo '<br/><strong><a href="edit.php?post_type=forum&page=gdbbpress_tools&tab=update">'.__("Update Information", "gd-bbpress-tools")."</a></strong> &middot; ";
-            echo '<a href="'.$no_thanks.'">'.__("Don't display this message anymore", "gd-bbpress-tools")."</a>.";
-            echo '</div>';
-        }
-    }
-
     public function admin_init() {
         if (isset($_GET['page'])) {
             $this->admin_plugin = $_GET['page'] == 'gdbbpress_tools';
-        }
-
-        if (isset($_GET['wp44updnotice']) && $_GET['wp44updnotice'] == 'hide') {
-            global $gdbbpress_tools;
-
-            $gdbbpress_tools->o['update_wp44'] = 1;
-
-            update_option('gd-bbpress-tools', $gdbbpress_tools->o);
-
-            wp_redirect(remove_query_arg('wp44updnotice'));
-            exit;
         }
     }
 
@@ -62,8 +37,6 @@ class gdbbT_Admin {
     }
 
     public function admin_load_hooks() {
-        if (GDBBPRESSTOOLS_WPV < 33) return;
-
         foreach ($this->page_ids as $id) {
             add_action('load-'.$id, array($this, 'load_admin_page'));
         }
@@ -115,9 +88,9 @@ class gdbbT_Admin {
     }
 
     public function menu_tools() {
-        global $gdbbpress_tools;
 
-        $options = $gdbbpress_tools->o;
+
+        $options = GDBTOCore::instance()->o;
         $_user_roles = d4p_bbpress_get_user_roles();
 
         include(GDBBPRESSTOOLS_PATH.'forms/panels.php');

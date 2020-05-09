@@ -15,8 +15,6 @@ if (!isset($tabs[$current])) {
     $current = 'tools';
 }
 
-$this->upgrade_notice();
-
 $to_load = $current;
 
 ?>

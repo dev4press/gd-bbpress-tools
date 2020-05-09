@@ -8,7 +8,6 @@ class gdbbPressTools_Defaults {
         'date' => '2020.05.09.',
         'build' => 2300,
         'status' => 'stable',
-        'update_wp44' => 0,
         'product_id' => 'gd-bbpress-tools',
         'edition' => 'free',
         'revision' => 0,

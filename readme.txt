@@ -121,7 +121,13 @@ Various updates, improvements and fixes.
 
 == Changelog ==
 = 3.0 - 2020.05.09 =
-
+* New reorganized plugin code and the way it is loaded and run
+* New rewritten loading of JavaScript and CSS files
+* New fully reorganized CSS now written using SCSS
+* New loading JavaScript and CSS minified or normal
+* Removed WordPress 4.4 shortcodes update
+* Removed some outdated and unused code
+* Fixed issues when saving some plugin settings
 
 = 2.2 - 2019.09.02 =
 * Removed all outdated translations

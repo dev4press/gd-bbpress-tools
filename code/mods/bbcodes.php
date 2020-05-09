@@ -672,9 +672,9 @@ class gdbbMod_Shortcodes {
 
 if (!function_exists('gdbbx_render_the_bbcode')) {
     function gdbbx_render_the_bbcode($name, $atts, $content = null) {
-        global $gdbbpress_tools;
 
-        $_mod = $gdbbpress_tools->mod['s'];
+
+        $_mod = GDBTOCore::instance()->mod['s'];
 
         if (method_exists($_mod, 'shortcode_'.$name)) {
             return $_mod->{'shortcode_'.$name}($atts, $content);

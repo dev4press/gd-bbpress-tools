@@ -129,15 +129,14 @@ if (!function_exists('d4p_is_user_admin')) {
 
 if (!function_exists('d4p_bbp_is_role')) {
     function d4p_bbp_is_role($setting_name) {
-        global $gdbbpress_tools;
         $allowed = false;
 
         if (current_user_can('d4p_bbpt_'.$setting_name)) {
             $allowed = true;
         } else if (is_super_admin()) {
-            $allowed = $gdbbpress_tools->o[$setting_name.'_super_admin'] == 1;
+            $allowed = GDBTOCore::instance()->o[$setting_name.'_super_admin'] == 1;
         } else if (is_user_logged_in()) {
-            $roles = isset($gdbbpress_tools->o[$setting_name.'_roles']) ? $gdbbpress_tools->o[$setting_name.'_roles'] : null;
+            $roles = isset(GDBTOCore::instance()->o[$setting_name.'_roles']) ? GDBTOCore::instance()->o[$setting_name.'_roles'] : null;
 
             if (is_null($roles)) {
                 $allowed = true;
@@ -200,6 +199,5 @@ if (!function_exists('d4p_bbp_update_shorthand_bbcodes')) {
 }
 
 function d4p_bbt_o($name) {
-    global $gdbbpress_tools;
-    return $gdbbpress_tools->o[$name];
+    return GDBTOCore::instance()->o[$name];
 }

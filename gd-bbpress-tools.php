@@ -34,4 +34,7 @@ if (!defined('GDBBPRESSTOOLS_CAP')) {
 require_once(dirname(__FILE__).'/code/defaults.php');
 require_once(dirname(__FILE__).'/code/shared.php');
 require_once(dirname(__FILE__).'/code/sanitize.php');
-require_once(dirname(__FILE__).'/code/tools/class.php');
+
+require_once(dirname(__FILE__).'/code/class.php');
+
+GDBTOCore::instance();
