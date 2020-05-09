@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Tweaks {
+class GDBTOModTweaks {
     public function __construct() {
         if (d4p_bbt_o('tweak_tags_in_reply_for_authors_only') == 1) {
             add_action('bbp_theme_before_reply_form', array($this, 'theme_before_reply_form'));

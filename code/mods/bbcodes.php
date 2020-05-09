@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Shortcodes {
+class GDBTOModShortcodes {
     private $advanced = array('url', 'google', 'youtube', 'note');
     private $shortcodes = array();
 

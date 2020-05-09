@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbPressTools_Defaults {
+class GDBTODefaults {
     var $default_options = array(
         'version' => '3.0',
         'date' => '2020.05.09.',

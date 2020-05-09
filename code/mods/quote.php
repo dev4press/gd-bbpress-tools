@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Quote {
+class GDBTOModQuote {
     private $header = false;
 
     private $location = 'header';

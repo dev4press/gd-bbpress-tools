@@ -2,9 +2,19 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Front {
+class GDBTOFront {
     function __construct() {
         add_action('bbtoolbox_core', array($this, 'load'));
+    }
+
+    public static function instance() {
+        static $instance = false;
+
+        if ($instance === false) {
+            $instance = new GDBTOFront();
+        }
+
+        return $instance;
     }
 
     public function load() {
@@ -41,6 +51,3 @@ class gdbbMod_Front {
         </script><?php }
     }
 }
-
-global $gdbbpress_tools_front;
-$gdbbpress_tools_front = new gdbbMod_Front();

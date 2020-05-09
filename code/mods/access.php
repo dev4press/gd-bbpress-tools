@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Access {
+class GDBTOModAccess {
     function __construct() {
         add_action('bbp_init', array($this, 'admin_disable_access'), 8);
     }

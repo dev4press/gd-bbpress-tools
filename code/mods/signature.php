@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Signature {
+class GDBTOModSignature {
     public $active = false;
     public $max_length;
     public $enhanced;

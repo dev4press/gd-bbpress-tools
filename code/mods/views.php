@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Views {
+class GDBTOModViews {
     public $views;
 
     function __construct($views) {

@@ -2,7 +2,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-class gdbbMod_Toolbar {
+class GDBTOModToolbar {
     function __construct() {
         add_action('bbtoolbox_init', array($this, 'init'));
     }
