@@ -18,16 +18,18 @@ class GDBTOModTweaks {
             add_filter('bbp_no_breadcrumb', '__return_true');
         }
 
-        if (d4p_bbt_o('tweak_remove_private_title_prefix')) {
-            add_filter('private_title_format', array($this, 'private_title_format'), 10, 2);
-        }
-
         if (d4p_bbt_o('tweak_topic_load_search_for_all_topics')) {
             add_action('bbp_template_before_single_topic', array($this, 'load_seach_form_template'));
         }
 
         if (d4p_bbt_o('tweak_forum_load_search_for_all_forums')) {
             add_action('bbp_template_before_single_forum', array($this, 'load_seach_form_template'));
+        }
+
+        if (!is_admin()) {
+            if (d4p_bbt_o('tweak_remove_private_title_prefix')) {
+                add_filter('private_title_format', array($this, 'private_title_format'), 10, 2);
+            }
         }
     }
 

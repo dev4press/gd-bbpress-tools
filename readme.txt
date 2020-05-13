@@ -1,7 +1,7 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.0
+Version: 3.0.1
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
 Requires at least: 4.9
 Requires PHP: 5.6
@@ -10,7 +10,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds different expansions and tools to the bbPress plugin powered forums: BBCode support, signatures, custom views, quote...
+Adds different expansions and tools to the bbPress plugin powered forums: BBCode support, signatures, various tweaks, custom views, quote...
 
 == Description ==
 Adds various expansions and tools to the bbPress plugin implemented forums. Currently included features:
@@ -25,15 +25,17 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 * Tweak: Disable bbPress breadcrumbs
 * Tweak: Topic tags field in reply form for author only
 * Tweak: Show lead topic
+* Tweak: Show search form for all forums and topics
+* Tweak: Disable 'private' title prefix
 * Topics View: Topics with most replies
 * Topics View: Latest Topics
 * Topics View: Topics by freshness
 
 = bbPress Plugin Versions =
-GD bbPress Tools 2.1 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
+GD bbPress Tools 3.0 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
 
 = BuddyPress Support =
-GD bbPress Tools 2.1 is tested with BuddyPress 4.0 using bbPress. Make sure you enable JavaScript and CSS Settings Always Include option in the plugin settings.
+GD bbPress Tools 3.0 is tested with BuddyPress 5.0 using bbPress. Make sure you enable JavaScript and CSS Settings Always Include option in the plugin settings.
 
 = More free dev4Press.com plugins for bbPress =
 * [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
@@ -44,7 +46,8 @@ GD bbPress Tools 2.1 is tested with BuddyPress 4.0 using bbPress. Make sure you 
 Pro version contains many more great features:
 
 * Enhanced attachments features
-* Limit file types attachments uplod
+* Limit file types attachments upload
+* Add custom file types for upload
 * BBCodes editor toolbar
 * Report topics and replies
 * Say thanks to forum members
@@ -61,22 +64,16 @@ Pro version contains many more great features:
 * Forum based settings overrides
 * Improved BuddyPress support
 * 40 BBCodes (including Hide and Spoiler)
-* 19 Topics Views
-* 8 additional widgets
+* 19 more Topics Views
+* 9 additional widgets
 * Many great tweaks
 * And much, much more
 
 With more features on the roadmap exclusively for Pro version.
 
-* More information about [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/)
-* Compare [Free vs. Pro Plugin](https://plugins.dev4press.com/gd-bbpress-toolbox/articles/toolbox-pro-vs-free-plugins/)
-
-= Premium dev4Press.com plugins for bbPress =
-* [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) - collection of features for bbPress
-* [GD Quantum Theme Pro](https://plugins.dev4press.com/gd-quantum-theme-for-bbpress/) - add new theme package to bbPress
-* [GD Power Search Pro](https://plugins.dev4press.com/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
-* [GD Topic Polls Pro](https://plugins.dev4press.com/gd-topic-polls/) - add polls to the bbPress topics
-* [GD Topic Prefix Pro](https://plugins.dev4press.com/gd-topic-prefix/) - add customizable bbPress topic prefixes
+* More information about [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/?utm_source=wporg&utm_medium=link&utm_campaign=gd-bbpress-tools)
+* Compare [Free vs. Pro Plugin](https://plugins.dev4press.com/gd-bbpress-toolbox/articles/toolbox-pro-vs-free-plugins/?utm_source=wporg&utm_medium=link&utm_campaign=gd-bbpress-tools)
+* More Premium plugins for bbPress [bbPress Plugins Club](https://bbpress.dev4press.com/?utm_source=wporg&utm_medium=link&utm_campaign=gd-bbpress-tools)
 
 == Installation ==
 = General Requirements =
@@ -120,6 +117,11 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 Various updates, improvements and fixes.
 
 == Changelog ==
+= 3.0.1 - 2020.05.13 =
+* Improvements to the plugin readme file
+* Fixed small issue with the new private prefix tweak
+* Fixed issue with the wrong include path
+
 = 3.0 - 2020.05.09 =
 * New Tweak to remove forum and topic Private prefix
 * New Tweak to load search form on top of all forums
