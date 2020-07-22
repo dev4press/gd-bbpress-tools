@@ -4,7 +4,7 @@
 Plugin Name: GD bbPress Tools
 Plugin URI: https://plugins.dev4press.com/gd-bbpress-tools/
 Description: Adds different expansions and tools to the bbPress plugin powered forums: BBCode support, signatures, various tweaks, custom views, quote...
-Version: 3.0.1
+Version: 3.1
 Author: Milan Petrovic
 Author URI: https://www.dev4press.com/
 Text Domain: gd-bbpress-tools

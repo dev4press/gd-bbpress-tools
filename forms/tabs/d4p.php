@@ -12,6 +12,7 @@
 
     <fieldset>
         <h3><?php _e("More Free Plugins for bbPress", "gd-bbpress-tools"); ?></h3>
+        <a target="_blank" href="https://wordpress.org/plugins/gd-forum-manager-for-bbpress/">GD Forum Manager</a><br/>
         <a target="_blank" href="https://wordpress.org/plugins/gd-bbpress-tools/">GD bbPress Tools</a><br/>
         <a target="_blank" href="https://wordpress.org/plugins/gd-topic-polls/">GD Topic Polls</a><br/>
         <a target="_blank" href="https://wordpress.org/plugins/gd-power-search-for-bbpress/">GD Power Search</a><br/>

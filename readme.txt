@@ -1,7 +1,7 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.0.1
+Version: 3.1
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
 Requires at least: 4.9
 Requires PHP: 5.6
@@ -34,10 +34,8 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 = bbPress Plugin Versions =
 GD bbPress Tools 3.0 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
 
-= BuddyPress Support =
-GD bbPress Tools 3.0 is tested with BuddyPress 5.0 using bbPress. Make sure you enable JavaScript and CSS Settings Always Include option in the plugin settings.
-
 = More free dev4Press.com plugins for bbPress =
+* [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
 * [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
 * [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
 * [GD Power Search](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
@@ -106,6 +104,9 @@ The quote itself doesn't strip HTML, but bbPress does. If the quoted section con
 = Some features not working with BuddyPress group forums? =
 This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled and 'Always Include' option is also enabled.
 
+= Does this plugin work with bbPress and BuddyPress groups? =
+GD bbPress Tools 3.1 is tested with BuddyPress 6.0 using bbPress for Groups forums. Make sure you enable JavaScript and CSS Settings Always Include option in the plugin settings.
+
 = Some BuddyPress features break when I use BuddyPress Nuovo templates? =
 The problem is caused by the Italic BBCode due to the conflict with the Underscore templates system BuddyPress uses. You can disable Italic BBCode, or you can limit BBCodes to the bbPress content only (highly recommended).
 
@@ -113,10 +114,14 @@ The problem is caused by the Italic BBCode due to the conflict with the Undersco
 This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
 == Upgrade Notice ==
-= 3.0 =
-Various updates, improvements and fixes.
+= 3.1 =
+Various updates and improvements.
 
 == Changelog ==
+= 3.1 - 2020.07.23 =
+* Improvements to the plugin readme file
+* Few more minor updates
+
 = 3.0.1 - 2020.05.13 =
 * Improvements to the plugin readme file
 * Fixed small issue with the new private prefix tweak
