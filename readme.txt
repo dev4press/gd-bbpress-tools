@@ -115,7 +115,7 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 
 == Upgrade Notice ==
 = 3.1 =
-Various updates and improvements.
+Minor updates and improvements.
 
 == Changelog ==
 = 3.1 - 2020.07.23 =
