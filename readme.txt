@@ -1,19 +1,19 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.1
+Version: 3.2
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
-Requires at least: 4.9
-Requires PHP: 5.6
-Tested up to: 5.4
+Requires at least: 5.1
+Requires PHP: 7.0
+Tested up to: 5.9
 Stable tag: trunk
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Adds different expansions and tools to the bbPress plugin powered forums: BBCode support, signatures, various tweaks, custom views, quote...
 
 == Description ==
-Adds various expansions and tools to the bbPress plugin implemented forums. Currently included features:
+Adds various expansions and tools to the bbPress plugin implemented forums. Currently, included features:
 
 * Quote Reply or Topic
 * Change allowed HTML tags and attributes
@@ -32,13 +32,14 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 * Topics View: Topics by freshness
 
 = bbPress Plugin Versions =
-GD bbPress Tools 3.0 supports bbPress 2.5 or newer. Older bbPress are no longer supported!
+GD bbPress Tools 3.2 supports bbPress 2.5 or newer. Older bbPress versions are no longer supported!
 
 = More free dev4Press.com plugins for bbPress =
 * [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
+* [GD Members Directory](https://wordpress.org/plugins/gd-members-directory-for-bbpress/) - show filterable list of all forum members
+* [GD Power Search](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
 * [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
 * [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
-* [GD Power Search](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
 
 = Upgrade to GD bbPress Toolbox Pro =
 Pro version contains many more great features:
@@ -75,10 +76,10 @@ With more features on the roadmap exclusively for Pro version.
 
 == Installation ==
 = General Requirements =
-* PHP: 5.6 or newer
+* PHP: 7.0 or newer
 
 = WordPress Requirements =
-* WordPress: 4.9 or newer
+* WordPress: 5.1 or newer
 
 = bbPress Requirements =
 * bbPress Plugin: 2.5 or newer
@@ -114,10 +115,15 @@ The problem is caused by the Italic BBCode due to the conflict with the Undersco
 This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
 == Upgrade Notice ==
-= 3.1 =
+= 3.2 =
 Minor updates and improvements.
 
 == Changelog ==
+= 3.2 - 2021.10.05 =
+* Improvements to the plugin readme file
+* Few more minor updates
+* Fixed issue with the hidden signature form
+
 = 3.1 - 2020.07.23 =
 * Improvements to the plugin readme file
 * Few more minor updates
