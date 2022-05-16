@@ -1,11 +1,11 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.2
+Version: 3.2.1
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
 Requires at least: 5.1
 Requires PHP: 7.0
-Tested up to: 5.9
+Tested up to: 6.0
 Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -119,6 +119,9 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 Minor updates and improvements.
 
 == Changelog ==
+= 3.2.1 (2022.05.16) =
+* New plugin is tested with WordPress 6.0
+
 = 3.2 - 2021.10.05 =
 * Improvements to the plugin readme file
 * Few more minor updates

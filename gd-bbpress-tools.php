@@ -7,15 +7,15 @@ Description:       Adds different expansions and tools to the bbPress plugin pow
 Author:            Milan Petrovic
 Author URI:        https://www.dev4press.com/
 Text Domain:       gd-bbpress-attachments
-Version:           3.2
+Version:           3.2.1
 Requires at least: 5.1
-Tested up to:      5.9
+Tested up to:      6.0
 Requires PHP:      7.0
 License:           GPLv3 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
 == Copyright ==
-Copyright 2008 - 2021 Milan Petrovic (email: support@dev4press.com)
+Copyright 2008 - 2022 Milan Petrovic (email: support@dev4press.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
