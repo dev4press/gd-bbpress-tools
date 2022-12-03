@@ -12,7 +12,7 @@
             <p><?php _e("By default, only keymasters can post unrestricted HTML, other users are limited to a very small subset of tags. With this option, you can change the scope of tags and tag attributes bbPress will allow for topics and replies.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label><?php _e("Allowed HTML", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <select name="kses_allowed_override" class="regular-text">
@@ -31,13 +31,13 @@
             <p><?php _e("Add button to quote content for a topic and reply with the author and link. Can use BBCode quote type.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label for="quote_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["quote_active"] == 1) echo " checked"; ?> name="quote_active" />
                         </td>
                     </tr>
-                    <tr valign="top" class="line-on-top">
+                    <tr class="line-on-top">
                         <th scope="row"><label><?php _e("Button Location", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <select name="quote_location" class="regular-text">
@@ -47,7 +47,7 @@
                             </select>
                         </td>
                     </tr>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label><?php _e("Quote Method", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <select name="quote_method" class="regular-text">
@@ -56,7 +56,7 @@
                             </select>
                         </td>
                     </tr>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><?php _e("Tags filtering", "gd-bbpress-tools") ?></th>
                         <td>
                             <input type="checkbox" <?php if ($options["allowed_tags_div"] == 1) echo " checked"; ?> name="allowed_tags_div" />
@@ -64,7 +64,7 @@
                             <em><?php _e("Needed for quotes to work properly.", "gd-bbpress-tools"); ?></em>
                         </td>
                     </tr>
-                    <tr valign="top" class="line-on-top">
+                    <tr class="line-on-top">
                         <th scope="row"><?php _e("Available to", "gd-bbpress-tools") ?></th>
                         <td>
                             <label for="quote_super_admin">
@@ -79,7 +79,7 @@
                             <?php } ?>
                         </td>
                     </tr>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><?php _e("Capability", "gd-bbpress-tools") ?></th>
                         <td>
                             <strong>d4p_bbpt_quote</strong>
@@ -94,13 +94,13 @@
             <p><?php _e("Add menu to the WordPress toolbar with quick access to both admin and front end side forum related pages.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label for="toolbar_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["toolbar_active"] == 1) echo " checked"; ?> name="toolbar_active" />
                         </td>
                     </tr>
-                    <tr valign="top" class="line-on-top">
+                    <tr class="line-on-top">
                         <th scope="row"><?php _e("Show menu to", "gd-bbpress-tools") ?></th>
                         <td>
                             <fieldset>
@@ -118,7 +118,7 @@
                             </fieldset>
                         </td>
                     </tr>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><?php _e("Capability", "gd-bbpress-tools") ?></th>
                         <td>
                             <strong>d4p_bbpt_toolbar</strong>
@@ -133,20 +133,20 @@
             <p><?php _e("Allow users to create signatures that will be included with their replies or topics. Control length and use of HTML or BBCodes.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label for="signature_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["signature_active"] == 1) echo " checked"; ?> name="signature_active" />
                         </td>
                     </tr>
-                    <tr valign="top" class="line-on-top">
+                    <tr class="line-on-top">
                         <th scope="row"><label for="signature_length"><?php _e("Maximum length", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="text" class="small-text" value="<?php echo $options["signature_length"]; ?>" id="signature_length" name="signature_length" />
+                            <input type="text" class="small-text" value="<?php echo esc_attr($options["signature_length"]); ?>" id="signature_length" name="signature_length" />
                             <span class="description"><?php _e("characters", "gd-bbpress-tools"); ?></span>
                         </td>
                     </tr>
-                    <tr valign="top" class="line-on-top">
+                    <tr class="line-on-top">
                         <th scope="row"><?php _e("Allowed to", "gd-bbpress-tools") ?></th>
                         <td>
                             <fieldset>
@@ -164,7 +164,7 @@
                             </fieldset>
                         </td>
                     </tr>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><?php _e("Capability", "gd-bbpress-tools") ?></th>
                         <td>
                             <strong>d4p_bbpt_signature</strong>
@@ -177,7 +177,7 @@
             <p><?php _e("Allow users to create rich signature with HTML or BBCodes.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label><?php _e("Enhanced", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <select name="signature_method" class="regular-text">
@@ -188,7 +188,7 @@
                             </select>
                         </td>
                     </tr>
-                    <tr valign="top" class="line-on-top">
+                    <tr class="line-on-top">
                         <th scope="row"><?php _e("Allowed to", "gd-bbpress-tools") ?></th>
                         <td>
                             <fieldset>
@@ -206,7 +206,7 @@
                             </fieldset>
                         </td>
                     </tr>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><?php _e("Capability", "gd-bbpress-tools") ?></th>
                         <td>
                             <strong>d4p_bbpt_signature_enhanced</strong>
@@ -221,7 +221,7 @@
             <p><?php _e("Select group where the signature editor will be displayed.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label><?php _e("Field Group", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <?php
@@ -259,13 +259,13 @@
             <p><?php _e("Select who can see and access admin side bbPress forums, topics and reply controls. Be careful with this feature.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label for="admin_disable_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["admin_disable_active"] == 1) echo " checked"; ?> name="admin_disable_active" />
                         </td>
                     </tr>
-                    <tr valign="top" class="line-on-top">
+                    <tr class="line-on-top">
                         <th scope="row"><?php _e("Roles with access", "gd-bbpress-tools") ?></th>
                         <td>
                             <fieldset>
@@ -283,7 +283,7 @@
                             </fieldset>
                         </td>
                     </tr>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><?php _e("Capability", "gd-bbpress-tools") ?></th>
                         <td>
                             <strong>d4p_bbpt_admin_disable</strong>
@@ -299,7 +299,7 @@
             <p><?php _e("Plugin will attempt to load files automatically when needed. If that fails, try using this option.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                <tr valign="top">
+                <tr>
                     <th scope="row"><label for="include_always"><?php _e("Always Include", "gd-bbpress-tools"); ?></label></th>
                     <td>
                         <input type="checkbox" <?php if ($options["include_always"] == 1) echo " checked"; ?> name="include_always" />

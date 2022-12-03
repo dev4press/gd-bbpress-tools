@@ -22,7 +22,7 @@ class GDBTOFront {
     }
 
     public function register_scripts_and_styles() {
-        $debug = defined('SCRIPT_DEBUG') ? SCRIPT_DEBUG : false;
+        $debug = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG;
         $files = 'front'.($debug ? '' : '.min');
 
         wp_register_style('gdbto-front', GDBBPRESSTOOLS_URL.'css/'.$files.'.css', array(), GDBBPRESSTOOLS_VERSION);

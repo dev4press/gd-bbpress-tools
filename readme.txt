@@ -1,11 +1,11 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.2.1
+Version: 3.3
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
-Requires at least: 5.1
+Requires at least: 5.3
 Requires PHP: 7.0
-Tested up to: 6.0
+Tested up to: 6.1
 Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -115,10 +115,16 @@ The problem is caused by the Italic BBCode due to the conflict with the Undersco
 This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
 == Upgrade Notice ==
-= 3.2 =
-Minor updates and improvements.
+= 3.3 =
+Various updates and improvements.
 
 == Changelog ==
+= 3.3 (2022.12.03) =
+* New plugin is tested with WordPress 6.1
+* Updated settings page with use of escaping for attributes
+* Updated some aspects for the PHP core code style
+* Updated some system requirements
+
 = 3.2.1 (2022.05.16) =
 * New plugin is tested with WordPress 6.0
 

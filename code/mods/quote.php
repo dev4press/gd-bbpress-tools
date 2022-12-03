@@ -82,9 +82,9 @@ class GDBTOModQuote {
     public function reply_links($content, $args) {
         $this->header = true;
 
-        $before = isset($args['before']) ? $args['before'] : '<span class="bbp-admin-links">';
-        $after = isset($args['after']) ? $args['after'] : '</span>';
-        $sep = isset($args['sep']) ? $args['sep'] : ' | ';
+        $before = $args['before'] ?? '<span class="bbp-admin-links">';
+        $after = $args['after'] ?? '</span>';
+        $sep = $args['sep'] ?? ' | ';
 
         $old_links = trim(substr($content, strlen($before), strlen($content) - strlen($before) - strlen($after)));
 

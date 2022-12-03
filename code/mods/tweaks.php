@@ -19,11 +19,11 @@ class GDBTOModTweaks {
         }
 
         if (d4p_bbt_o('tweak_topic_load_search_for_all_topics')) {
-            add_action('bbp_template_before_single_topic', array($this, 'load_seach_form_template'));
+            add_action('bbp_template_before_single_topic', array($this, 'load_search_form_template'));
         }
 
         if (d4p_bbt_o('tweak_forum_load_search_for_all_forums')) {
-            add_action('bbp_template_before_single_forum', array($this, 'load_seach_form_template'));
+            add_action('bbp_template_before_single_forum', array($this, 'load_search_form_template'));
         }
 
         if (!is_admin()) {
@@ -49,7 +49,7 @@ class GDBTOModTweaks {
         return $prefix;
     }
 
-    public function load_seach_form_template() {
+    public function load_search_form_template() {
         if (bbp_allow_search()) : ?>
             <div class="bbp-search-form">
                 <?php bbp_get_template_part('form', 'search'); ?>

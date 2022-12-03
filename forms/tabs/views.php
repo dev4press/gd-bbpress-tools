@@ -12,7 +12,7 @@
             <p><?php _e("This view will show list of topics with most replies.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label for="view_mostreplies_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["view_mostreplies_active"] == 1) echo " checked"; ?> name="view_mostreplies_active" />
@@ -27,7 +27,7 @@
             <p><?php _e("This view will show list of topics starting with latest ones.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label for="view_latesttopics_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["view_latesttopics_active"] == 1) echo " checked"; ?> name="view_latesttopics_active" />
@@ -42,7 +42,7 @@
             <p><?php _e("This view will show list of topics ordered by freshness (latest activity).", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
                 <tbody>
-                    <tr valign="top">
+                    <tr>
                         <th scope="row"><label for="view_topicsfreshness_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <input type="checkbox" <?php if ($options["view_topicsfreshness_active"] == 1) echo " checked"; ?> name="view_topicsfreshness_active" />
