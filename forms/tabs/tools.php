@@ -13,9 +13,9 @@
             <table class="form-table">
                 <tbody>
                     <tr>
-                        <th scope="row"><label><?php _e("Allowed HTML", "gd-bbpress-tools"); ?></label></th>
+                        <th scope="row"><label for="kses_allowed_override"><?php _e("Allowed HTML", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <select name="kses_allowed_override" class="regular-text">
+                            <select id="kses_allowed_override" name="kses_allowed_override" class="regular-text">
                                 <option value="bbpress"<?php if ($options["kses_allowed_override"] == "bbpress") echo ' selected="selected"'; ?>><?php _e("bbPress Default Set", "gd-bbpress-tools"); ?></option>
                                 <option value="expanded"<?php if ($options["kses_allowed_override"] == "expanded") echo ' selected="selected"'; ?>><?php _e("Expanded Set (Recommended)", "gd-bbpress-tools"); ?></option>
                                 <option value="post"<?php if ($options["kses_allowed_override"] == "post") echo ' selected="selected"'; ?>><?php _e("Full WordPress Posts Set", "gd-bbpress-tools"); ?></option>
@@ -34,13 +34,13 @@
                     <tr>
                         <th scope="row"><label for="quote_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["quote_active"] == 1) echo " checked"; ?> name="quote_active" />
+                            <input type="checkbox" <?php if ($options["quote_active"] == 1) echo " checked"; ?> id="quote_active" name="quote_active" />
                         </td>
                     </tr>
                     <tr class="line-on-top">
-                        <th scope="row"><label><?php _e("Button Location", "gd-bbpress-tools"); ?></label></th>
+                        <th scope="row"><label for="quote_location"><?php _e("Button Location", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <select name="quote_location" class="regular-text">
+                            <select id="quote_location" name="quote_location" class="regular-text">
                                 <option value="header"<?php if ($options["quote_location"] == "header") echo ' selected="selected"'; ?>><?php _e("Reply or Topic header", "gd-bbpress-tools"); ?></option>
                                 <option value="content"<?php if ($options["quote_location"] == "content") echo ' selected="selected"'; ?>><?php _e("Reply or Topic content", "gd-bbpress-tools"); ?></option>
                                 <option value="both"<?php if ($options["quote_location"] == "both") echo ' selected="selected"'; ?>><?php _e("Both header and content", "gd-bbpress-tools"); ?></option>
@@ -48,18 +48,18 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><label><?php _e("Quote Method", "gd-bbpress-tools"); ?></label></th>
+                        <th scope="row"><label for="quote_method"><?php _e("Quote Method", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <select name="quote_method" class="regular-text">
+                            <select id="quote_method" name="quote_method" class="regular-text">
                                 <option value="bbcode"<?php if ($options["quote_method"] == "bbcode") echo ' selected="selected"'; ?>><?php _e("BBCode", "gd-bbpress-tools"); ?></option>
                                 <option value="html"<?php if ($options["quote_method"] == "html") echo ' selected="selected"'; ?>><?php _e("HTML", "gd-bbpress-tools"); ?></option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row"><?php _e("Tags filtering", "gd-bbpress-tools") ?></th>
+                        <th scope="row"><label for="allowed_tags_div"><?php _e("Tags filtering", "gd-bbpress-tools") ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["allowed_tags_div"] == 1) echo " checked"; ?> name="allowed_tags_div" />
+                            <input type="checkbox" <?php if ($options["allowed_tags_div"] == 1) echo " checked"; ?> id="allowed_tags_div" name="allowed_tags_div" />
                             <?php _e("Enable DIV tag", "gd-bbpress-tools"); ?><br/>
                             <em><?php _e("Needed for quotes to work properly.", "gd-bbpress-tools"); ?></em>
                         </td>
@@ -73,7 +73,7 @@
                             </label><br/>
                             <?php foreach ($_user_roles as $role => $title) { ?>
                             <label for="quote_roles_<?php echo $role; ?>">
-                                <input type="checkbox" <?php if (!isset($options["quote_roles"]) || is_null($options["quote_roles"]) || in_array($role, $options["quote_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="quote_roles_<?php echo $role; ?>" name="quote_roles[]" />
+                                <input type="checkbox" <?php if ( !isset($options["quote_roles"]) || in_array($role, $options["quote_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="quote_roles_<?php echo $role; ?>" name="quote_roles[]" />
                                 <?php echo $title; ?>
                             </label><br/>
                             <?php } ?>
@@ -97,7 +97,7 @@
                     <tr>
                         <th scope="row"><label for="toolbar_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["toolbar_active"] == 1) echo " checked"; ?> name="toolbar_active" />
+                            <input type="checkbox" <?php if ($options["toolbar_active"] == 1) echo " checked"; ?> id="toolbar_active" name="toolbar_active" />
                         </td>
                     </tr>
                     <tr class="line-on-top">
@@ -111,7 +111,7 @@
                                 </label><br/>
                                 <?php foreach ($_user_roles as $role => $title) { ?>
                                 <label for="toolbar_roles_<?php echo $role; ?>">
-                                    <input type="checkbox" <?php if (!isset($options["toolbar_roles"]) || is_null($options["toolbar_roles"]) || in_array($role, $options["toolbar_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="toolbar_roles_<?php echo $role; ?>" name="toolbar_roles[]" />
+                                    <input type="checkbox" <?php if ( !isset($options["toolbar_roles"]) || in_array($role, $options["toolbar_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="toolbar_roles_<?php echo $role; ?>" name="toolbar_roles[]" />
                                     <?php echo $title; ?>
                                 </label><br/>
                                 <?php } ?>
@@ -136,7 +136,7 @@
                     <tr>
                         <th scope="row"><label for="signature_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["signature_active"] == 1) echo " checked"; ?> name="signature_active" />
+                            <input type="checkbox" <?php if ($options["signature_active"] == 1) echo " checked"; ?> id="signature_active" name="signature_active" />
                         </td>
                     </tr>
                     <tr class="line-on-top">
@@ -157,7 +157,7 @@
                                 </label><br/>
                                 <?php foreach ($_user_roles as $role => $title) { ?>
                                 <label for="signature_roles_<?php echo $role; ?>">
-                                    <input type="checkbox" <?php if (!isset($options["signature_roles"]) || is_null($options["signature_roles"]) || in_array($role, $options["signature_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="signature_roles_<?php echo $role; ?>" name="signature_roles[]" />
+                                    <input type="checkbox" <?php if ( !isset($options["signature_roles"]) || in_array($role, $options["signature_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="signature_roles_<?php echo $role; ?>" name="signature_roles[]" />
                                     <?php echo $title; ?>
                                 </label><br/>
                                 <?php } ?>
@@ -178,9 +178,9 @@
             <table class="form-table">
                 <tbody>
                     <tr>
-                        <th scope="row"><label><?php _e("Enhanced", "gd-bbpress-tools"); ?></label></th>
+                        <th scope="row"><label for="signature_method"><?php _e("Enhanced", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <select name="signature_method" class="regular-text">
+                            <select id="signature_method" name="signature_method" class="regular-text">
                                 <option value="off"<?php if ($options["signature_method"] == "off") echo ' selected="selected"'; ?>><?php _e("Disabled", "gd-bbpress-tools"); ?></option>
                                 <option value="bbcode"<?php if ($options["signature_method"] == "bbcode") echo ' selected="selected"'; ?>><?php _e("BBCode", "gd-bbpress-tools"); ?></option>
                                 <option value="html"<?php if ($options["signature_method"] == "html") echo ' selected="selected"'; ?>><?php _e("HTML", "gd-bbpress-tools"); ?></option>
@@ -199,7 +199,7 @@
                                 </label><br/>
                                 <?php foreach ($_user_roles as $role => $title) { ?>
                                 <label for="signature_enhanced_roles_<?php echo $role; ?>">
-                                    <input type="checkbox" <?php if (!isset($options["signature_enhanced_roles"]) || is_null($options["signature_enhanced_roles"]) || in_array($role, $options["signature_enhanced_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="signature_enhanced_roles_<?php echo $role; ?>" name="signature_enhanced_roles[]" />
+                                    <input type="checkbox" <?php if ( !isset($options["signature_enhanced_roles"]) || in_array($role, $options["signature_enhanced_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="signature_enhanced_roles_<?php echo $role; ?>" name="signature_enhanced_roles[]" />
                                     <?php echo $title; ?>
                                 </label><br/>
                                 <?php } ?>
@@ -222,7 +222,7 @@
             <table class="form-table">
                 <tbody>
                     <tr>
-                        <th scope="row"><label><?php _e("Field Group", "gd-bbpress-tools"); ?></label></th>
+                        <th scope="row"><label for="signature_buddypress_profile_group"><?php _e("Field Group", "gd-bbpress-tools"); ?></label></th>
                         <td>
                             <?php
 
@@ -238,7 +238,7 @@
                             }
 
                             ?>
-                            <select name="signature_buddypress_profile_group" class="regular-text">
+                            <select id="signature_buddypress_profile_group" name="signature_buddypress_profile_group" class="regular-text">
                                 <?php
 
                                 foreach ($groups as $key => $name) {
@@ -262,7 +262,7 @@
                     <tr>
                         <th scope="row"><label for="admin_disable_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["admin_disable_active"] == 1) echo " checked"; ?> name="admin_disable_active" />
+                            <input type="checkbox" <?php if ($options["admin_disable_active"] == 1) echo " checked"; ?> id="admin_disable_active" name="admin_disable_active" />
                         </td>
                     </tr>
                     <tr class="line-on-top">
@@ -276,7 +276,7 @@
                                 </label><br/>
                                 <?php foreach ($_user_roles as $role => $title) { ?>
                                 <label for="admin_disable_roles_<?php echo $role; ?>">
-                                    <input type="checkbox" <?php if (!isset($options["admin_disable_roles"]) || is_null($options["admin_disable_roles"]) || in_array($role, $options["admin_disable_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="admin_disable_roles_<?php echo $role; ?>" name="admin_disable_roles[]" />
+                                    <input type="checkbox" <?php if ( !isset($options["admin_disable_roles"]) || in_array($role, $options["admin_disable_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="admin_disable_roles_<?php echo $role; ?>" name="admin_disable_roles[]" />
                                     <?php echo $title; ?>
                                 </label><br/>
                                 <?php } ?>
@@ -302,7 +302,7 @@
                 <tr>
                     <th scope="row"><label for="include_always"><?php _e("Always Include", "gd-bbpress-tools"); ?></label></th>
                     <td>
-                        <input type="checkbox" <?php if ($options["include_always"] == 1) echo " checked"; ?> name="include_always" />
+                        <input type="checkbox" <?php if ($options["include_always"] == 1) echo " checked"; ?> id="include_always" name="include_always" />
                     </td>
                 </tr>
                 </tbody>

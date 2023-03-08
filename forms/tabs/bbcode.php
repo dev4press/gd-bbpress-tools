@@ -27,7 +27,7 @@ if (isset($_GET["settings-updated"]) && $_GET["settings-updated"] == "true") { ?
                     <tr>
                         <th scope="row"><label for="bbcodes_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["bbcodes_active"] == 1) echo " checked"; ?> name="bbcodes_active" />
+                            <input type="checkbox" <?php if ($options["bbcodes_active"] == 1) echo " checked"; ?> id="bbcodes_active" name="bbcodes_active" />
                         </td>
                     </tr>
                 </tbody>
@@ -42,7 +42,7 @@ if (isset($_GET["settings-updated"]) && $_GET["settings-updated"] == "true") { ?
                     <tr>
                         <th scope="row"><label for="bbcodes_notice"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["bbcodes_notice"] == 1) echo " checked"; ?> name="bbcodes_notice" />
+                            <input type="checkbox" <?php if ($options["bbcodes_notice"] == 1) echo " checked"; ?> id="bbcodes_notice" name="bbcodes_notice" />
                         </td>
                     </tr>
                 </tbody>
@@ -57,7 +57,7 @@ if (isset($_GET["settings-updated"]) && $_GET["settings-updated"] == "true") { ?
                     <tr>
                         <th scope="row"><label for="bbcodes_bbpress_only"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["bbcodes_bbpress_only"] == 1) echo " checked"; ?> name="bbcodes_bbpress_only" />
+                            <input type="checkbox" <?php if ($options["bbcodes_bbpress_only"] == 1) echo " checked"; ?> id="bbcodes_bbpress_only" name="bbcodes_bbpress_only" />
                         </td>
                     </tr>
                 </tbody>
@@ -81,7 +81,7 @@ if (isset($_GET["settings-updated"]) && $_GET["settings-updated"] == "true") { ?
                                 </label><br/>
                                 <?php foreach ($_user_roles as $role => $title) { ?>
                                 <label for="bbcodes_special_roles_<?php echo $role; ?>">
-                                    <input type="checkbox" <?php if (!isset($options["bbcodes_special_roles"]) || is_null($options["bbcodes_special_roles"]) || in_array($role, $options["bbcodes_special_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="bbcodes_special_roles_<?php echo $role; ?>" name="bbcodes_special_roles[]" />
+                                    <input type="checkbox" <?php if ( !isset($options["bbcodes_special_roles"]) || in_array($role, $options["bbcodes_special_roles"])) echo " checked"; ?> value="<?php echo $role; ?>" id="bbcodes_special_roles_<?php echo $role; ?>" name="bbcodes_special_roles[]" />
                                     <?php echo $title; ?>
                                 </label><br/>
                                 <?php } ?>
@@ -97,7 +97,7 @@ if (isset($_GET["settings-updated"]) && $_GET["settings-updated"] == "true") { ?
                     <tr>
                         <th scope="row"><label for="bbcodes_special_action"><?php _e("Restrict action", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <select name="bbcodes_special_action" class="regular-text">
+                            <select id="bbcodes_special_action" name="bbcodes_special_action" class="regular-text">
                                 <option value="info"<?php if ($options["bbcodes_special_action"] == "info") echo ' selected="selected"'; ?>><?php _e("Replace with notice", "gd-bbpress-tools"); ?></option>
                                 <option value="delete"<?php if ($options["bbcodes_special_action"] == "delete") echo ' selected="selected"'; ?>><?php _e("Remove from content", "gd-bbpress-tools"); ?></option>
                             </select>

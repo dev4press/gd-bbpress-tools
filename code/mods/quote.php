@@ -7,8 +7,8 @@ if (!defined('ABSPATH')) {
 class GDBTOModQuote {
     private $header = false;
 
-    private $location = 'header';
-    private $method = 'quote';
+    private $location;
+    private $method;
 
     function __construct($location, $method) {
         $this->location = $location;
@@ -65,8 +65,8 @@ class GDBTOModQuote {
         remove_filter('bbp_get_reply_content', array($this, 'reply_content'));
         remove_filter('bbp_get_topic_content', array($this, 'reply_content'));
 
-        remove_filter('bbp_get_topic_admin_links', array($this, 'reply_links'), 10);
-        remove_filter('bbp_get_reply_admin_links', array($this, 'reply_links'), 10);
+        remove_filter('bbp_get_topic_admin_links', array($this, 'reply_links') );
+        remove_filter('bbp_get_reply_admin_links', array($this, 'reply_links') );
         remove_action('bbp_theme_after_topic_admin_links', array($this, 'after_reply_links'));
         remove_action('bbp_theme_after_reply_admin_links', array($this, 'after_reply_links'));
     }

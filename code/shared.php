@@ -91,7 +91,7 @@ if (!function_exists('d4p_is_bbpress')) {
      * @return bool true if the current page is the forum related
      */
     function d4p_is_bbpress() {
-        $is = d4p_has_bbpress() ? is_bbpress() : false;
+        $is = d4p_has_bbpress() && is_bbpress();
 
         return apply_filters('d4p_is_bbpress', $is);
     }

@@ -60,22 +60,21 @@ class GDBTOModSignature {
         remove_filter('bbp_get_reply_content', array($this, 'reply_content'), 10000);
     }
 
-    public function editor_form_profile() {
+    public function editor_form_profile($profile_user) {
         if (!is_admin()) {
             return;
         }
 
-        global $profileuser;
+	    if ( $profile_user instanceof WP_User ) {
+		    $old_filter           = $profile_user->filter;
+		    $profile_user->filter = 'display';
 
-        $old_filter = $profileuser->filter;
-        $profileuser->filter = 'display';
+		    $_signature = d4p_bbp_update_shorthand_bbcodes( $profile_user->signature );
 
-        $_signature = d4p_bbp_update_shorthand_bbcodes($profileuser->signature);
+		    $profile_user->filter = $old_filter;
+	    }
 
-        $profileuser->filter = $old_filter;
-
-        $form = apply_filters('d4p_bbpresstools_signature_editor_file', GDBBPRESSTOOLS_PATH.'forms/tools/signature_profile.php');
-        include_once($form);
+	    include_once(apply_filters('d4p_bbpresstools_signature_editor_file', GDBBPRESSTOOLS_PATH.'forms/tools/signature_profile.php'));
     }
 
     public function editor_form_bbpress() {

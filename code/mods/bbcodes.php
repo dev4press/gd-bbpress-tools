@@ -8,12 +8,12 @@ class GDBTOModShortcodes {
     private $advanced = array('url', 'google', 'youtube', 'note');
     private $shortcodes = array();
 
-    private $removal = 'info';
-    private $notice = true;
-    private $restricted = false;
-    private $bbpress_only = false;
+    private $removal;
+    private $notice;
+    private $restricted;
+    private $bbpress_only;
 
-    private $list_deactivated = array();
+    private $list_deactivated;
 
     function __construct($bbpress_only = false, $restricted = false, $removal = 'info', $deactivated = array(), $notice = true) {
         $this->bbpress_only = $bbpress_only;
@@ -197,9 +197,8 @@ class GDBTOModShortcodes {
 
         $default = $this->shortcodes[$code]['atts'];
         $default[$code] = '';
-        $atts = shortcode_atts($default, $atts);
 
-        return $atts;
+	    return shortcode_atts($default, $atts);
     }
 
     private function _content($content, $raw = false) {
@@ -258,7 +257,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts($code, $atts);
-        $args = isset($this->shortcodes[$code]['args']) ? $this->shortcodes[$code]['args'] : array();
+        $args = $this->shortcodes[ $code ]['args'] ?? array();
 
         return $this->_tag($tag, $name, $content, $atts, $args);
     }
@@ -411,7 +410,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts('size', $atts);
-        $args = isset($this->shortcodes['size']['args']) ? $this->shortcodes['size']['args'] : array();
+        $args = $this->shortcodes['size']['args'] ?? array();
 
         if ($atts['size'] != '') {
             $args['style'] = 'font-size: '.$atts['size'];
@@ -436,7 +435,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts('color', $atts);
-        $args = isset($this->shortcodes['color']['args']) ? $this->shortcodes['color']['args'] : array();
+        $args = $this->shortcodes['color']['args'] ?? array();
 
         if ($atts['color'] != '') {
             $args['style'] = 'color: '.$atts['color'];
@@ -457,7 +456,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts('area', $atts);
-        $args = isset($this->shortcodes['area']['args']) ? $this->shortcodes['area']['args'] : array();
+        $args = $this->shortcodes['area']['args'] ?? array();
 
         if ($atts['area'] != '') {
             $content = '<legend>'.$atts['area'].'</legend>'.$content;
@@ -482,7 +481,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts('quote', $atts);
-        $args = isset($this->shortcodes['quote']['args']) ? $this->shortcodes['quote']['args'] : array();
+        $args = $this->shortcodes['quote']['args'] ?? array();
 
         $title = '';
         if ($atts['quote'] != '') {
@@ -517,7 +516,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts('url', $atts);
-        $args = isset($this->shortcodes['url']['args']) ? $this->shortcodes['url']['args'] : array();
+        $args = $this->shortcodes['url']['args'] ?? array();
 
         if ($atts['url'] != '') {
             $args['href'] = str_replace(array('"', "'"), '', $atts['url']);
@@ -538,7 +537,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts('img', $atts);
-        $args = isset($this->shortcodes['img']['args']) ? $this->shortcodes['img']['args'] : array();
+        $args = $this->shortcodes['img']['args'] ?? array();
         $args['src'] = $content;
 
         if ($atts['img'] != '') {
@@ -563,7 +562,7 @@ class GDBTOModShortcodes {
         }
 
         $atts = $this->_atts('google', $atts);
-        $args = isset($this->shortcodes['google']['args']) ? $this->shortcodes['google']['args'] : array();
+        $args = $this->shortcodes['google']['args'] ?? array();
 
         $protocol = is_ssl() ? 'https' : 'http';
         $link = $protocol.'://www.google.';
@@ -607,8 +606,8 @@ class GDBTOModShortcodes {
             $parts = explode('x', $atts['youtube'], 2);
 
             if (count($parts) == 2) {
-                $args['width'] = intval($parts[0]);
-                $args['height'] = intval($parts[1]);
+	            $atts['width'] = intval($parts[0]);
+	            $atts['height'] = intval($parts[1]);
             }
         }
 
@@ -650,8 +649,8 @@ class GDBTOModShortcodes {
             $parts = explode('x', $atts['vimeo'], 2);
 
             if (count($parts) == 2) {
-                $args['width'] = intval($parts[0]);
-                $args['height'] = intval($parts[1]);
+	            $atts['width'] = intval($parts[0]);
+	            $atts['height'] = intval($parts[1]);
             }
         }
 

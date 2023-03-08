@@ -15,7 +15,7 @@
                     <tr>
                         <th scope="row"><label for="tweak_disable_breadcrumbs"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["tweak_disable_breadcrumbs"] == 1) echo " checked"; ?> name="tweak_disable_breadcrumbs" />
+                            <input type="checkbox" <?php if ($options["tweak_disable_breadcrumbs"] == 1) echo " checked"; ?> id="tweak_disable_breadcrumbs" name="tweak_disable_breadcrumbs" />
                         </td>
                     </tr>
                 </tbody>
@@ -30,7 +30,7 @@
                     <tr>
                         <th scope="row"><label for="tweak_tags_in_reply_for_authors_only"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["tweak_tags_in_reply_for_authors_only"] == 1) echo " checked"; ?> name="tweak_tags_in_reply_for_authors_only" />
+                            <input type="checkbox" <?php if ($options["tweak_tags_in_reply_for_authors_only"] == 1) echo " checked"; ?> id="tweak_tags_in_reply_for_authors_only" name="tweak_tags_in_reply_for_authors_only" />
                         </td>
                     </tr>
                 </tbody>
@@ -45,7 +45,7 @@
                     <tr>
                         <th scope="row"><label for="tweak_show_lead_topic"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["tweak_show_lead_topic"] == 1) echo " checked"; ?> name="tweak_show_lead_topic" />
+                            <input type="checkbox" <?php if ($options["tweak_show_lead_topic"] == 1) echo " checked"; ?> id="tweak_show_lead_topic" name="tweak_show_lead_topic" />
                         </td>
                     </tr>
                 </tbody>
@@ -60,7 +60,7 @@
                 <tr>
                     <th scope="row"><label for="tweak_show_lead_topic"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                     <td>
-                        <input type="checkbox" <?php if ($options["tweak_remove_private_title_prefix"] == 1) echo " checked"; ?> name="tweak_remove_private_title_prefix" />
+                        <input type="checkbox" <?php if ($options["tweak_remove_private_title_prefix"] == 1) echo " checked"; ?> id="tweak_show_lead_topic" name="tweak_remove_private_title_prefix" />
                     </td>
                 </tr>
                 </tbody>
@@ -75,13 +75,13 @@
                 <tr>
                     <th scope="row"><label for="tweak_forum_load_search_for_all_forums"><?php _e("Single Forums", "gd-bbpress-tools"); ?></label></th>
                     <td>
-                        <input type="checkbox" <?php if ($options["tweak_forum_load_search_for_all_forums"] == 1) echo " checked"; ?> name="tweak_forum_load_search_for_all_forums" />
+                        <input type="checkbox" <?php if ($options["tweak_forum_load_search_for_all_forums"] == 1) echo " checked"; ?> id="tweak_forum_load_search_for_all_forums" name="tweak_forum_load_search_for_all_forums" />
                     </td>
                 </tr>
                 <tr>
                     <th scope="row"><label for="tweak_topic_load_search_for_all_topics"><?php _e("Single Topics", "gd-bbpress-tools"); ?></label></th>
                     <td>
-                        <input type="checkbox" <?php if ($options["tweak_topic_load_search_for_all_topics"] == 1) echo " checked"; ?> name="tweak_topic_load_search_for_all_topics" />
+                        <input type="checkbox" <?php if ($options["tweak_topic_load_search_for_all_topics"] == 1) echo " checked"; ?> id="tweak_topic_load_search_for_all_topics" name="tweak_topic_load_search_for_all_topics" />
                     </td>
                 </tr>
                 </tbody>

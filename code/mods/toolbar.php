@@ -17,7 +17,7 @@ class GDBTOModToolbar {
     }
 
     public function admin_bar_icon() { ?>
-        <style type="text/css">
+        <style>
             #wpadminbar #wp-admin-bar-gdbb-toolbar .ab-icon:before {
                 content: "\f477";
                 top: 2px;

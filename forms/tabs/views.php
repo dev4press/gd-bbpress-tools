@@ -8,6 +8,11 @@
     <?php wp_nonce_field("gd-bbpress-tools"); ?>
     <div class="d4p-settings">
         <fieldset>
+            <h3><?php _e("Topic Views", "gd-bbpress-tools"); ?></h3>
+            <p><?php _e("Topic Views are core bbPress feature, and GD bbPress Tools plugin only registers new views. If you have not used views before, best way to start is by using 'bbPress Topic Views List' widget that will display all registered views.", "gd-bbpress-tools"); ?></p>
+        </fieldset>
+
+        <fieldset>
             <h3><?php _e("Topics with most replies", "gd-bbpress-tools"); ?></h3>
             <p><?php _e("This view will show list of topics with most replies.", "gd-bbpress-tools"); ?></p>
             <table class="form-table">
@@ -15,7 +20,7 @@
                     <tr>
                         <th scope="row"><label for="view_mostreplies_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["view_mostreplies_active"] == 1) echo " checked"; ?> name="view_mostreplies_active" />
+                            <input type="checkbox" <?php if ($options["view_mostreplies_active"] == 1) echo " checked"; ?> id="view_mostreplies_active" name="view_mostreplies_active" />
                         </td>
                     </tr>
                 </tbody>
@@ -30,7 +35,7 @@
                     <tr>
                         <th scope="row"><label for="view_latesttopics_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["view_latesttopics_active"] == 1) echo " checked"; ?> name="view_latesttopics_active" />
+                            <input type="checkbox" <?php if ($options["view_latesttopics_active"] == 1) echo " checked"; ?> id="view_latesttopics_active" name="view_latesttopics_active" />
                         </td>
                     </tr>
                 </tbody>
@@ -45,7 +50,7 @@
                     <tr>
                         <th scope="row"><label for="view_topicsfreshness_active"><?php _e("Active", "gd-bbpress-tools"); ?></label></th>
                         <td>
-                            <input type="checkbox" <?php if ($options["view_topicsfreshness_active"] == 1) echo " checked"; ?> name="view_topicsfreshness_active" />
+                            <input type="checkbox" <?php if ($options["view_topicsfreshness_active"] == 1) echo " checked"; ?> id="view_topicsfreshness_active" name="view_topicsfreshness_active" />
                         </td>
                     </tr>
                 </tbody>

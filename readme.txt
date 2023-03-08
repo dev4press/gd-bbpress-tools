@@ -1,11 +1,11 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.3
+Version: 3.4
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
-Requires at least: 5.3
-Requires PHP: 7.0
-Tested up to: 6.1
+Requires at least: 5.5
+Requires PHP: 7.3
+Tested up to: 6.2
 Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -32,7 +32,7 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 * Topics View: Topics by freshness
 
 = bbPress Plugin Versions =
-GD bbPress Tools 3.2 supports bbPress 2.5 or newer. Older bbPress versions are no longer supported!
+GD bbPress Tools 3.4 supports bbPress 2.6.2 or newer. Older bbPress versions are no longer supported!
 
 = More free dev4Press.com plugins for bbPress =
 * [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
@@ -76,13 +76,13 @@ With more features on the roadmap exclusively for Pro version.
 
 == Installation ==
 = General Requirements =
-* PHP: 7.0 or newer
+* PHP: 7.3 or newer
 
 = WordPress Requirements =
-* WordPress: 5.1 or newer
+* WordPress: 5.5 or newer
 
 = bbPress Requirements =
-* bbPress Plugin: 2.5 or newer
+* bbPress Plugin: 2.6.2 or newer
 
 = Basic Installation =
 * Plugin folder in the WordPress plugins folder must be `gd-bbpress-tools`
@@ -93,8 +93,8 @@ With more features on the roadmap exclusively for Pro version.
 = Where can I configure the plugin? =
 Open the Forums menu, and you will see Tools item there. This will open a panel with global plugin settings.
 
-= Will this plugin work with standalone bbPress installation? =
-No. This plugin requires the plugin versions of bbPress 2.5 or higher.
+= Will this plugin work with old, standalone bbPress (versions 1.x) installation? =
+No. This plugin requires the plugin versions of bbPress 2.6.2 or higher.
 
 = Click on Quote button doesn't add quoted content? =
 This happens if the plugin's JavaScript is not loaded. Make sure that both CSS and JavaScript options are enabled. If that doesn't help, make sure to enable 'Always Include' option too.
@@ -112,13 +112,27 @@ GD bbPress Tools 3.1 is tested with BuddyPress 6.0 using bbPress for Groups foru
 The problem is caused by the Italic BBCode due to the conflict with the Underscore templates system BuddyPress uses. You can disable Italic BBCode, or you can limit BBCodes to the bbPress content only (highly recommended).
 
 = When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
-This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some of the HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
+This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
 == Upgrade Notice ==
-= 3.3 =
-Various updates and improvements.
+= 3.4 =
+Various updates and improvements. Several bug fixes.
 
 == Changelog ==
+= 3.4 (2023.03.08) =
+* New system requirements: PHP 7.3 or newer
+* New system requirements: WordPress 5.5 or newer
+* New system requirements: bbPress 2.6.2 or newer
+* New: fully tested with PHP 8.0, 8.1 and 8.2
+* New: notice on the Views tab about the Topic Views
+* Updated integration of signature editor in the admin side
+* Updated various things in PHP code for better PHP 8.x compatibility
+* Updated plugin admin interface items for better accessibility
+* Updated some code to remove use of deprecated functions
+* Fixed some accessibility issues with options labels
+* Fixed dimensions issue with the YouTube and Vimeo BBCodes
+* Fixed fatal error with signature editing in PHP 8
+
 = 3.3 (2022.12.03) =
 * New plugin is tested with WordPress 6.1
 * Updated settings page with use of escaping for attributes
