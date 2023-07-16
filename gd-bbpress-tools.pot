@@ -3,12 +3,12 @@ msgid ""
 msgstr ""
 "Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
 "Project-Id-Version: gd-bbpress-tools\n"
-"POT-Creation-Date: 05/09/2020 05:10:12 PM\n"
+"POT-Creation-Date: 07/16/2023 08:43:08 AM\n"
 "Language-Team: Milan Petrovic <support@dev4press.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: GD i18n 2.2\n"
+"X-Generator: GD i18n 2.7; www.dev4press.com\n"
 
 #: code/mods/bbcodes.php:53
 #: forms/tabs/bbcode.php:117
@@ -154,39 +154,39 @@ msgstr ""
 msgid "Note"
 msgstr ""
 
-#: code/mods/bbcodes.php:301
+#: code/mods/bbcodes.php:300
 msgid "BBCode you used is not allowed."
 msgstr ""
 
-#: code/mods/bbcodes.php:319
+#: code/mods/bbcodes.php:318
 msgid "You can use BBCodes to format your content."
 msgstr ""
 
-#: code/mods/bbcodes.php:321
+#: code/mods/bbcodes.php:320
 msgid "Your account can't use Advanced BBCodes, they will be stripped before saving."
 msgstr ""
 
-#: code/mods/bbcodes.php:502
+#: code/mods/bbcodes.php:501
 msgid "wrote"
 msgstr ""
 
-#: code/mods/signature.php:106
+#: code/mods/signature.php:105
 msgid "You can use only plain text. HTML and BBCodes will be stripped."
 msgstr ""
 
-#: code/mods/signature.php:109
+#: code/mods/signature.php:108
 msgid "You can use HTML."
 msgstr ""
 
-#: code/mods/signature.php:113
+#: code/mods/signature.php:112
 msgid "You can use BBCodes."
 msgstr ""
 
-#: code/mods/signature.php:117
+#: code/mods/signature.php:116
 msgid "HTML will be stripped."
 msgstr ""
 
-#: code/mods/signature.php:121
+#: code/mods/signature.php:120
 msgid "BBCodes will be stripped."
 msgstr ""
 
@@ -271,7 +271,7 @@ msgid "Dev4Press Homepage"
 msgstr ""
 
 #: code/mods/views.php:27
-#: forms/tabs/views.php:10
+#: forms/tabs/views.php:15
 msgid "Topics with most replies"
 msgstr ""
 
@@ -527,9 +527,9 @@ msgstr ""
 #: forms/tabs/tweaks.php:30
 #: forms/tabs/tweaks.php:45
 #: forms/tabs/tweaks.php:60
-#: forms/tabs/views.php:15
-#: forms/tabs/views.php:30
-#: forms/tabs/views.php:45
+#: forms/tabs/views.php:20
+#: forms/tabs/views.php:35
+#: forms/tabs/views.php:50
 msgid "Active"
 msgstr ""
 
@@ -633,7 +633,7 @@ msgstr ""
 #: forms/tabs/bbcode.php:249
 #: forms/tabs/tools.php:312
 #: forms/tabs/tweaks.php:91
-#: forms/tabs/views.php:55
+#: forms/tabs/views.php:60
 msgid "Save Changes"
 msgstr ""
 
@@ -645,25 +645,15 @@ msgstr ""
 msgid "Premium Plugins for bbPress"
 msgstr ""
 
-#: forms/tabs/d4p.php:13
+#: forms/tabs/d4p.php:12
 msgid "More Free Plugins for bbPress"
 msgstr ""
 
 #: forms/tabs/d4p.php:21
-#: forms/tabs/d4p.php:25
-msgid "Plugin Home Website"
-msgstr ""
-
-#: forms/tabs/d4p.php:22
-#: forms/tabs/d4p.php:26
-msgid "Plugin Demo"
-msgstr ""
-
-#: forms/tabs/d4p.php:30
 msgid "Other Premium Plugins"
 msgstr ""
 
-#: forms/tabs/d4p.php:42
+#: forms/tabs/d4p.php:32
 msgid "More Free Plugins"
 msgstr ""
 
@@ -895,23 +885,31 @@ msgstr ""
 msgid "Single Topics"
 msgstr ""
 
+#: forms/tabs/views.php:10
+msgid "Topic Views"
+msgstr ""
+
 #: forms/tabs/views.php:11
+msgid "Topic Views are core bbPress feature, and GD bbPress Tools plugin only registers new views. If you have not used views before, best way to start is by using 'bbPress Topic Views List' widget that will display all registered views."
+msgstr ""
+
+#: forms/tabs/views.php:16
 msgid "This view will show list of topics with most replies."
 msgstr ""
 
-#: forms/tabs/views.php:25
+#: forms/tabs/views.php:30
 msgid "Latest Topics"
 msgstr ""
 
-#: forms/tabs/views.php:26
+#: forms/tabs/views.php:31
 msgid "This view will show list of topics starting with latest ones."
 msgstr ""
 
-#: forms/tabs/views.php:40
+#: forms/tabs/views.php:45
 msgid "Topics by freshness"
 msgstr ""
 
-#: forms/tabs/views.php:41
+#: forms/tabs/views.php:46
 msgid "This view will show list of topics ordered by freshness (latest activity)."
 msgstr ""
 

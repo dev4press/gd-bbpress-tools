@@ -6,10 +6,10 @@ Plugin URI:        https://plugins.dev4press.com/gd-bbpress-tools/
 Description:       Adds different expansions and tools to the bbPress plugin powered forums: BBCode support, signatures, various tweaks, custom views, quote...
 Author:            Milan Petrovic
 Author URI:        https://www.dev4press.com/
-Text Domain:       gd-bbpress-attachments
-Version:           3.4
+Text Domain:       gd-bbpress-tools
+Version:           3.4.1
 Requires at least: 5.5
-Tested up to:      6.2
+Tested up to:      6.3
 Requires PHP:      7.3
 License:           GPLv3 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html

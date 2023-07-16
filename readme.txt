@@ -1,11 +1,11 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.4
+Version: 3.4.1
 Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
 Requires at least: 5.5
 Requires PHP: 7.3
-Tested up to: 6.2
+Tested up to: 6.3
 Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -119,12 +119,16 @@ This happens because quoting can only take rendered HTML as is, and when saved, 
 Various updates and improvements. Several bug fixes.
 
 == Changelog ==
+= 3.4.1 (2023.07.15) =
+* Updated main plugin POT file to include few missing strings
+* Fixed the translation domain name in the main plugin file header
+
 = 3.4 (2023.03.08) =
 * New system requirements: PHP 7.3 or newer
 * New system requirements: WordPress 5.5 or newer
 * New system requirements: bbPress 2.6.2 or newer
-* New: fully tested with PHP 8.0, 8.1 and 8.2
-* New: notice on the Views tab about the Topic Views
+* New fully tested with PHP 8.0, 8.1 and 8.2
+* New notice on the Views tab about the Topic Views
 * Updated integration of signature editor in the admin side
 * Updated various things in PHP code for better PHP 8.x compatibility
 * Updated plugin admin interface items for better accessibility
