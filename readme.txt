@@ -1,11 +1,11 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.4.1
-Tags: dev4press, bbpress, signature, quote, bbcodes, toolbar, views, bbcode, forums, forum, topic, reply
-Requires at least: 5.5
-Requires PHP: 7.3
-Tested up to: 6.3
+Version: 3.5
+Tags: dev4press, bbpress, signature, quote, bbcodes
+Requires at least: 5.8
+Requires PHP: 7.4
+Tested up to: 6.5
 Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -32,7 +32,7 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 * Topics View: Topics by freshness
 
 = bbPress Plugin Versions =
-GD bbPress Tools 3.4 supports bbPress 2.6.2 or newer. Older bbPress versions are no longer supported!
+GD bbPress Tools 3.5 supports bbPress 2.6.2 or newer. Older bbPress versions are no longer supported!
 
 = More free dev4Press.com plugins for bbPress =
 * [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
@@ -76,10 +76,10 @@ With more features on the roadmap exclusively for Pro version.
 
 == Installation ==
 = General Requirements =
-* PHP: 7.3 or newer
+* PHP: 7.4 or newer
 
 = WordPress Requirements =
-* WordPress: 5.5 or newer
+* WordPress: 5.8 or newer
 
 = bbPress Requirements =
 * bbPress Plugin: 2.6.2 or newer
@@ -115,10 +115,22 @@ The problem is caused by the Italic BBCode due to the conflict with the Undersco
 This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
 == Upgrade Notice ==
+= 3.5 =
+Few updates and improvements.
+
 = 3.4 =
 Various updates and improvements. Several bug fixes.
 
 == Changelog ==
+= 3.5 (2024.04.28) =
+* New directive `Requires Plugin` added into main plugin file
+* New System requirements: PHP 7.4 or newer
+* New System requirements: WordPress 5.8 or newer
+* New plugin fully tested with WordPress up to 6.5
+* New plugin fully tested with PHP 8.3
+* Updated code style and translation formatting
+* Updated main plugin JavaScript library
+
 = 3.4.1 (2023.07.15) =
 * Updated main plugin POT file to include few missing strings
 * Fixed the translation domain name in the main plugin file header
