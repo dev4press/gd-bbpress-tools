@@ -1,7 +1,7 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.5
+Version: 3.5.1
 Tags: dev4press, bbpress, signature, quote, bbcodes
 Requires at least: 5.8
 Requires PHP: 7.4
@@ -122,6 +122,11 @@ Few updates and improvements.
 Various updates and improvements. Several bug fixes.
 
 == Changelog ==
+= 3.5.1 (2024.05.14) =
+* Edit few more tweaks to the main JavaScript code
+* Edit various small updates to readme file
+* Fix missing semicolon in the JavaScript code
+
 = 3.5 (2024.04.28) =
 * New directive `Requires Plugin` added into main plugin file
 * New System requirements: PHP 7.4 or newer

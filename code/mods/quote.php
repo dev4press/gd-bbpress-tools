@@ -35,9 +35,9 @@ class GDBTOModQuote {
 				$ath = bbp_get_topic_author_display_name( $id );
 			}
 
-			return '<a href="#' . $id . '" bbp-url="' . $url . '" bbp-author="' . $ath . '" class="d4p-bbt-quote-link">' . __( 'Quote', 'gd-bbpress-tools' ) . '</a>';
+			return '<a href="#' . $id . '" data-id="'.$id.'" data-url="' . $url . '" data-author="' . $ath . '" class="d4p-bbt-quote-link">' . __( 'Quote', 'gd-bbpress-tools' ) . '</a>';
 		} else {
-			return '<a href="#' . $id . '" class="d4p-bbt-quote-link">' . __( 'Quote', 'gd-bbpress-tools' ) . '</a>';
+			return '<a href="#' . $id . '" data-id="'.$id.'" class="d4p-bbt-quote-link">' . __( 'Quote', 'gd-bbpress-tools' ) . '</a>';
 		}
 	}
 

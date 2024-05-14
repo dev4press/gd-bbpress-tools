@@ -24,11 +24,12 @@
             $(document).on("click", ".d4p-bbt-quote-link", function(e) {
                 e.preventDefault();
 
-                var rc = $("#bbp_reply_content")
+                var rc = $("#bbp_reply_content"),
+                    button = $(this);
 
                 if (rc.length > 0) {
                     var qout = wp.gdbto.front.get_selection(),
-                        id = $(this).attr("href").substr(1),
+                        id = button.data("id"),
                         quote_id = '#d4p-bbp-quote-' + id;
 
                     if (qout === "") {
@@ -43,9 +44,9 @@
                     if (gdbbPressToolsInit.quote_method === "bbcode") {
                         qout = "[quote quote=" + id + "]" + qout + "[/quote]";
                     } else {
-                        var title = '<div class="d4p-bbp-quote-title"><a href="' + $(this).attr("bbp-url") + '">';
+                        var title = '<div class="d4p-bbp-quote-title"><a href="' + button.data("url") + '">';
 
-                        title += $(this).attr("bbp-author") + ' ' + gdbbPressToolsInit.quote_wrote + ':</a></div>';
+                        title += button.data("author") + ' ' + gdbbPressToolsInit.quote_wrote + ':</a></div>';
                         qout = '<blockquote class="d4pbbc-quote">' + title + qout + '</blockquote>';
                     }
 
