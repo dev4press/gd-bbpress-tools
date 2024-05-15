@@ -2,6 +2,12 @@
 
 ## Changelog
 
+### Version: 3.3 (2022.12.03)
+* **new** plugin is tested with WordPress 6.1
+* **edit** settings page with use of escaping for attributes
+* **edit** some aspects for the PHP core code style
+* **edit** some system requirements
+
 ### Version: 3.2.1 (2022.05.16)
 * **new** plugin is tested with WordPress 6.0
 

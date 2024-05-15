@@ -36,7 +36,7 @@ class GDBTOFront {
 		wp_localize_script( 'gdbto-front', 'gdbbPressToolsInit', array(
 			'quote_method' => d4p_bbt_o( 'quote_method' ),
 			'quote_wrote'  => _x( 'wrote', 'Username quote suffix', 'gd-bbpress-tools' ),
-			'wp_editor'    => d4p_bbpress_version() > 20 ? ( bbp_use_wp_editor() ? 1 : 0 ) : 0,
+			'wp_editor'    => d4p_bbpress_version() > 20 ? ( bbp_use_wp_editor() ? '1' : '0' ) : '0',
 		) );
 	}
 

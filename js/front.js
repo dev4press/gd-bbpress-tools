@@ -18,7 +18,7 @@
                 t = document.selection.createRange().text;
             }
 
-            return jQuery.trim(t.toString());
+            return t.toString().trim();
         },
         init: function() {
             $(document).on("click", ".d4p-bbt-quote-link", function(e) {
@@ -50,12 +50,12 @@
                         qout = '<blockquote class="d4pbbc-quote">' + title + qout + '</blockquote>';
                     }
 
-                    if (gdbbPressToolsInit.wp_editor === 1 && !rc.is(":visible")) {
+                    if (gdbbPressToolsInit.wp_editor === "1" && !rc.is(":visible")) {
                         tinymce.get("bbp_reply_content").execCommand("mceInsertContent", false, qout);
                     } else {
                         var cntn = rc.val();
 
-                        if ($.trim(cntn) !== '') {
+                        if (cntn.trim() !== '') {
                             qout = "\n\n" + qout;
                         }
 

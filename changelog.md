@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### Version: 3.5.2 (2024.05.15)
+* **edit** few more tweaks to the main JavaScript code
+* **fix** problems with the Quote not working with TinyMCE editor
+
 ### Version: 3.5.1 (2024.05.14)
 * **edit** few more tweaks to the main JavaScript code
 * **edit** various small updates to readme file
@@ -33,9 +37,3 @@
 * **fix** some accessibility issues with options labels
 * **fix** dimensions issue with the YouTube and Vimeo BBCodes
 * **fix** fatal error with signature editing in PHP 8
-
-### Version: 3.3 (2022.12.03)
-* **new** plugin is tested with WordPress 6.1
-* **edit** settings page with use of escaping for attributes
-* **edit** some aspects for the PHP core code style
-* **edit** some system requirements
