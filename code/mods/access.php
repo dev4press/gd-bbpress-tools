@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class GDBTOModAccess {
-	function __construct() {
+	public function __construct() {
 		add_action( 'bbp_init', array( $this, 'admin_disable_access' ), 8 );
 	}
 

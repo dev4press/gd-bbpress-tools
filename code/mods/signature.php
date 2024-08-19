@@ -14,7 +14,7 @@ class GDBTOModSignature {
 	public $bbcodes = false;
 	public $html = false;
 
-	function __construct( $max_length = 512, $enhanced = true, $method = 'bbcode', $profile_group = 1 ) {
+	public function __construct( $max_length = 512, $enhanced = true, $method = 'bbcode', $profile_group = 1 ) {
 		$this->max_length    = $max_length;
 		$this->enhanced      = $enhanced;
 		$this->method        = $method;

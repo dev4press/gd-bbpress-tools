@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class GDBTOFront {
-	function __construct() {
+	public function __construct() {
 		$this->register_scripts_and_styles();
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );

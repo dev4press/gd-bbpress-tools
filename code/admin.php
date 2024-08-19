@@ -8,7 +8,7 @@ class GDBTOAdmin {
 	private $page_ids = array();
 	private $admin_plugin = false;
 
-	function __construct() {
+	public function __construct() {
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 
@@ -180,9 +180,9 @@ class GDBTOAdmin {
 		return $links;
 	}
 
-	function plugin_links( $links, $file ) {
+	public function plugin_links( $links, $file ) {
 		if ( $file == 'gd-bbpress-tools/gd-bbpress-tools.php' ) {
-			$links[] = '<a target="_blank" style="color: #cc0000; font-weight: bold;" href="https://plugins.dev4press.com/gd-bbpress-toolbox/">' . __( 'Upgrade to GD bbPress Toolbox Pro', 'gd-bbpress-tools' ) . '</a>';
+			$links[] = '<a target="_blank" style="color: #cc0000; font-weight: bold;" href="https://www.dev4press.com/plugins/gd-bbpress-toolbox/">' . __( 'Upgrade to GD bbPress Toolbox Pro', 'gd-bbpress-tools' ) . '</a>';
 		}
 
 		return $links;
@@ -200,10 +200,10 @@ class GDBTOAdmin {
 		$screen->add_help_tab( array(
 			"id"      => "gdpt-screenhelp-help",
 			"title"   => __( 'Get Help', 'gd-bbpress-tools' ),
-			"content" => '<h5>' . __( 'General Plugin Information', 'gd-bbpress-tools' ) . '</h5>
-                <p><a href="https://plugins.dev4press.com/gd-bbpress-tools/" target="_blank">' . __( 'Home Page on Dev4Press.com', 'gd-bbpress-tools' ) . '</a> | 
+			"content" => '<h2>' . __( 'General Plugin Information', 'gd-bbpress-tools' ) . '</h2>
+                <p><a href="https://www.dev4press.com/plugins/gd-bbpress-tools/" target="_blank">' . __( 'Home Page on Dev4Press.com', 'gd-bbpress-tools' ) . '</a> | 
                 <a href="https://wordpress.org/plugins/gd-bbpress-tools/" target="_blank">' . __( 'Home Page on WordPress.org', 'gd-bbpress-tools' ) . '</a></p> 
-                <h5>' . __( 'Getting Plugin Support', 'gd-bbpress-tools' ) . '</h5>
+                <h2>' . __( 'Getting Plugin Support', 'gd-bbpress-tools' ) . '</h2>
                 <p><a href="https://support.dev4press.com/forums/forum/plugins-free/gd-bbpress-tools/" target="_blank">' . __( 'Support Forum on Dev4Press.com', 'gd-bbpress-tools' ) . '</a> | 
                 <a href="https://wordpress.org/support/plugin/gd-bbpress-tools" target="_blank">' . __( 'Support Forum on WordPress.org', 'gd-bbpress-tools' ) . '</a></p>',
 		) );
@@ -213,8 +213,8 @@ class GDBTOAdmin {
 			"title"   => "Dev4Press",
 			"sfc",
 			"content" => '<p>' . __( 'On Dev4Press website you can find many useful plugins, themes and tutorials, all for WordPress. Please, take a few minutes to browse some of these resources, you might find some of them very useful.', 'gd-bbpress-tools' ) . '</p>
-                <p><a href="https://plugins.dev4press.com/" target="_blank"><strong>' . __( 'Plugins', 'gd-bbpress-tools' ) . '</strong></a> - ' . __( 'We have more than 10 plugins available, some of them are commercial and some are available for free.', 'gd-bbpress-tools' ) . '</p>
-                <p><a href="https://support.dev4press.com/kb/" target="_blank"><strong>' . __( 'Knowledge Base', 'gd-bbpress-tools' ) . '</strong></a> - ' . __( 'Premium and free tutorials for our plugins themes, and many general and practical WordPress tutorials.', 'gd-bbpress-tools' ) . '</p>
+                <p><a href="https://www.dev4press.com/plugins/" target="_blank"><strong>' . __( 'Plugins', 'gd-bbpress-tools' ) . '</strong></a> - ' . __( 'We have more than 10 plugins available, some of them are commercial and some are available for free.', 'gd-bbpress-tools' ) . '</p>
+                <p><a href="https://www.dev4press.com/kb/" target="_blank"><strong>' . __( 'Knowledge Base', 'gd-bbpress-tools' ) . '</strong></a> - ' . __( 'Premium and free tutorials for our plugins themes, and many general and practical WordPress tutorials.', 'gd-bbpress-tools' ) . '</p>
                 <p><a href="https://support.dev4press.com/forums/" target="_blank"><strong>' . __( 'Support Forums', 'gd-bbpress-tools' ) . '</strong></a> - ' . __( 'Premium support forum for all with valid licenses to get help. Also, report bugs and leave suggestions.', 'gd-bbpress-tools' ) . '</p>',
 		) );
 	}

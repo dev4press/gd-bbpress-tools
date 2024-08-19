@@ -1,11 +1,11 @@
 === GD bbPress Tools ===
 Contributors: GDragoN
-Donate link: https://plugins.dev4press.com/gd-bbpress-tools/
-Version: 3.5.2
+Donate link: https://www.dev4press.com/plugins/gd-bbpress-tools/
+Version: 3.5.3
 Tags: dev4press, bbpress, signature, quote, bbcodes
-Requires at least: 5.8
+Requires at least: 5.9
 Requires PHP: 7.4
-Tested up to: 6.5
+Tested up to: 6.6
 Stable tag: trunk
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -32,7 +32,7 @@ Adds various expansions and tools to the bbPress plugin implemented forums. Curr
 * Topics View: Topics by freshness
 
 = bbPress Plugin Versions =
-GD bbPress Tools 3.5 supports bbPress 2.6.2 or newer. Older bbPress versions are no longer supported!
+GD bbPress Tools 3.5.3 supports bbPress 2.6.2 or newer. Older bbPress versions are no longer supported!
 
 = More free dev4Press.com plugins for bbPress =
 * [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
@@ -42,7 +42,7 @@ GD bbPress Tools 3.5 supports bbPress 2.6.2 or newer. Older bbPress versions are
 * [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
 
 = Upgrade to GD bbPress Toolbox Pro =
-Pro version contains many more great features:
+The Pro version contains many more great features:
 
 * Enhanced attachments features
 * Limit file types attachments upload
@@ -50,6 +50,7 @@ Pro version contains many more great features:
 * BBCodes editor toolbar
 * Report topics and replies
 * Say thanks to forum members
+* Query Performance Booster
 * Various SEO features
 * Various privacy features
 * Enable TinyMCE editor
@@ -58,6 +59,7 @@ Pro version contains many more great features:
 * Notification email control
 * Show user stats in topics and replies
 * Track new and unread topics
+* Mute Forums and Users
 * Great new responsive admin UI
 * Setup Wizard
 * Forum based settings overrides
@@ -70,16 +72,15 @@ Pro version contains many more great features:
 
 With more features on the roadmap exclusively for Pro version.
 
-* More information about [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/?utm_source=wporg&utm_medium=link&utm_campaign=gd-bbpress-tools)
-* Compare [Free vs. Pro Plugin](https://plugins.dev4press.com/gd-bbpress-toolbox/articles/toolbox-pro-vs-free-plugins/?utm_source=wporg&utm_medium=link&utm_campaign=gd-bbpress-tools)
-* More Premium plugins for bbPress [bbPress Plugins Club](https://bbpress.dev4press.com/?utm_source=wporg&utm_medium=link&utm_campaign=gd-bbpress-tools)
+* More information about [GD bbPress Toolbox Pro](https://www.dev4press.com/plugins/gd-bbpress-toolbox/)
+* More Premium plugins for bbPress [bbPress Plugins Club](https://www.dev4press.com/bbpress-club/)
 
 == Installation ==
 = General Requirements =
 * PHP: 7.4 or newer
 
 = WordPress Requirements =
-* WordPress: 5.8 or newer
+* WordPress: 5.9 or newer
 
 = bbPress Requirements =
 * bbPress Plugin: 2.6.2 or newer
@@ -112,7 +113,7 @@ GD bbPress Tools 3.1 is tested with BuddyPress 6.0 using bbPress for Groups foru
 The problem is caused by the Italic BBCode due to the conflict with the Underscore templates system BuddyPress uses. You can disable Italic BBCode, or you can limit BBCodes to the bbPress content only (highly recommended).
 
 = When the quote is used on the formatted content, formatting will be gone inside displayed quote? =
-This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some HTML elements based on the user role. [GD bbPress Toolbox Pro](https://plugins.dev4press.com/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
+This happens because quoting can only take rendered HTML as is, and when saved, bbPress will remove some HTML elements based on the user role. [GD bbPress Toolbox Pro](https://www.dev4press.com/plugins/gd-bbpress-toolbox/) plugin includes additional features that expand the allowed HTML elements for all roles, and that solves this quote problem.
 
 == Upgrade Notice ==
 = 3.5 =
@@ -122,6 +123,11 @@ Few updates and improvements.
 Various updates and improvements. Several bug fixes.
 
 == Changelog ==
+= 3.5.3 (2024.08.19) =
+* Edit: updated links to the Dev4Press website
+* Edit: various PHP code changes and improvements
+* Fix: fatal error on one of the admin panel tabs
+
 = 3.5.2 (2024.05.15) =
 * Edit few more tweaks to the main JavaScript code
 * Fix problems with the Quote not working with TinyMCE editor

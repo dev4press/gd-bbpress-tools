@@ -2,6 +2,11 @@
 
 ## Changelog
 
+### Version: 3.5.3 (2024.08.19)
+* **edit** updated links to the Dev4Press website
+* **edit** various PHP code changes and improvements
+* **fix** fatal error on one of the admin panel tabs
+
 ### Version: 3.5.2 (2024.05.15)
 * **edit** few more tweaks to the main JavaScript code
 * **fix** problems with the Quote not working with TinyMCE editor

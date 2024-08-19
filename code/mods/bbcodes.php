@@ -15,7 +15,7 @@ class GDBTOModShortcodes {
 
 	private $list_deactivated;
 
-	function __construct( $bbpress_only = false, $restricted = false, $removal = 'info', $deactivated = array(), $notice = true ) {
+	public function __construct( $bbpress_only = false, $restricted = false, $removal = 'info', $deactivated = array(), $notice = true ) {
 		$this->bbpress_only     = $bbpress_only;
 		$this->restricted       = $restricted;
 		$this->removal          = $removal;

@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class GDBTOModViews {
 	public $views;
 
-	function __construct( $views ) {
+	public function __construct( $views ) {
 		$this->views = $views;
 
 		add_action( 'bbtoolbox_core', array( $this, 'register_views' ) );

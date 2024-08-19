@@ -24,7 +24,7 @@ class GDBTOCore {
 		'w' => null,
 	);
 
-	function __construct() {
+	public function __construct() {
 		$this->_init();
 
 		add_action( 'bbp_init', array( $this, 'load_modules' ), 1 );

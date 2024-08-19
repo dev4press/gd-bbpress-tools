@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class GDBTOModToolbar {
-	function __construct() {
+	public function __construct() {
 		add_action( 'bbtoolbox_init', array( $this, 'init' ) );
 	}
 
